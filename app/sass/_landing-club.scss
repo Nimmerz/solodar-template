@@ -1,0 +1,873 @@
+@import "vars";
+
+$s4t_purpur: #fb5396;
+$s4t_purpur1: #ff6699;
+$s4t_clrBlockHeader: #6600cc;
+$s4t_clrBlock2BG: #6633cc;
+$s4t_clrBlock2Border: #9966cc;
+$s4t_clrBlock2ButtonBg: #9933ff;
+$s4t_clrGrey: #666666;
+$s4t_clrGreyText: #333333;
+$s4t_clrPurpur2: #ff3399;
+$s4t_clrTeacherCity: #cccccc;
+$s4t_clrBlue: #6699ff;
+$s4t_clrBlueShadow: #ccccff;
+$s4t_clrBGgrey: #f2ecf4;
+
+.landing-club {
+
+  &-h3 {
+    margin: 0;
+    font-family: 'Wes';
+    text-align: center;
+    font-size: 40px;
+    line-height: 29.48px;
+    &--purpur {
+      color: $s4t_purpur;
+    }
+    &--white {
+      color: white;
+    }
+  }
+
+  &__welcome {
+    background: url("../img/landing-club/bg_first.jpg") center no-repeat;
+    background-size: 100% 100%;
+    min-height: 673px;
+    padding: 218px 0 50px;
+
+    &-club-name{
+      text-transform: uppercase;
+      font-size: 55px;
+    }
+
+    &-hello {
+      background: url("../img/landing-club/bg_first_hello.jpg") center no-repeat;
+      background-size: cover;
+      min-height: 222px;
+      max-width: 675px;
+      margin: 0 auto;
+      padding: 40px 0 40px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      &-p {
+        margin: 0;
+        padding: 15px 0px 15px;
+        color: $s4t_clrGrey;
+        font-family: 'Wes';
+        text-align: center;
+        font-size: 29.27px;
+        font-weight: bold;
+        line-height: 29.48px;
+      }
+    }
+
+    &-btn {
+      min-height: 53px;
+      min-width: 167px;
+      border: 0;
+      border-radius: 5px;
+      font-family: 'GothamPro';
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 34px;
+      color: $white;
+      margin: 5px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &--purpur {
+        background: $s4t_purpur;
+        box-shadow: 0 2px 6px rgba(176, 34, 91, 0.24);
+      }
+
+      &--indigo {
+        background: $s4t_clrBlockHeader;
+        box-shadow: 0 7px 9px rgba(111, 0, 185, 0.35);
+      }
+    }
+
+    &-city {
+      margin: 30px;
+      font-family: 'GothamPro';
+      color: white;
+      text-align: center;
+      font-size: 13px;
+      line-height: 34px;
+
+      &-span {
+        padding: 0 10px;
+      }
+
+      &-select {
+        border: 2px solid white;
+        background: transparent;
+        border-radius: 3px;
+        color: white;
+        padding: 15px 20px;
+      }
+
+      &-option{
+        color: $s4t_clrGreyText;
+      }
+    }
+  }
+
+  &__why-club {
+    padding: 70px 0 50px;
+    min-height: 650px;
+
+    &-descript {
+      padding: 25px 170px 0;
+      color: $s4t_clrGrey;
+      font-family: 'GothamPro-Medium';
+      text-align: center;
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    &-reasons {
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+    }
+
+    &-reason {
+      margin-top: 100px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      position: relative;
+      &-img {
+        height: 132px;
+      }
+      &-header {
+        margin-top: 22px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: $s4t_clrBlockHeader;
+        font-family: "Wes";
+        font-size: 30px;
+        line-height: 30px;
+        flex-basis: 100%;
+      }
+      &-p {
+        font-family: 'GothamPro';
+        margin-top: 5px;
+        font-size: 13px;
+        line-height: 22px;
+        color: $s4t_clrGreyText;
+      }
+
+      &--left:after {
+        position: absolute;
+        content: url("../img/landing-club/block_arrLeft.png");
+        //TODO ARROWS COLORS !!!!
+        top: -75px;
+        right: 20px;
+      }
+
+      &--center:after {
+        position: absolute;
+        content: url("../img/landing-club/reason-arrCenter.png");
+        //TODO ARROWS COLORS !!!!
+        top: -75px;
+        right: 50%;
+        margin-right: -9px;
+      }
+
+      &--right:after {
+        position: absolute;
+        content: url("../img/landing-club/block_arrRight.png");
+        //TODO ARROWS COLORS !!!!
+        top: -75px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__advantages-box {
+    background: url("../img/landing-club/bg_third.png") center no-repeat;
+    background-size: cover;
+    padding: 150px 0px;
+  }
+
+  &__advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 650px;
+    padding-bottom: 50px;
+  }
+
+  &__advantage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px dashed $s4t_clrBlock2Border;
+    border-radius: 3px;
+    background: $s4t_clrBlock2BG;
+    min-width: 330px;
+    flex-basis: 330px;
+    margin-top: 50px;
+    padding: 45px 0;
+
+    &-header {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &-img {
+      min-height: 65px;
+    }
+
+    &-heading {
+      text-align: center;
+      padding: 0 28px;
+      color: #fff;
+      font-family: GothamPro;
+      font-weight: 700;
+      margin-top: 25px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    &-text {
+      text-align: center;
+      padding: 0 40px;
+      color: $white;
+      font-family: 'GothamPro';
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &-footer{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &-btn {
+      min-width: 137px;
+      min-height: 44px;
+      background: $s4t_clrBlock2ButtonBg;
+      border: 0px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: $white;
+      font-family: "GothamPro-Medium";
+      font-size: 13px;
+      box-shadow: 0 7px 9px rgba(102, 0, 204, 0.35);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-instagram {
+      color: white;
+      font-family: "GothamPro-Medium";
+      font-size: 11px;
+      line-height: 14px;
+      border-bottom: 1px dashed white;
+      margin: 20px 0 0 20px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: -19px;
+        top: 1px;
+        font-family: "FontAwesome";
+        font-size: 15px;
+        content: "\f16d";
+      }
+    }
+  }
+
+  &__cities {
+    padding: 55px 0;
+    background: url("../img/landing-club/bg-cities.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    &-head {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__social-box {
+    padding: 50px 0;
+  }
+
+  &__socials{
+    padding: 30px 75px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &-subscribe{
+      padding: 0;
+      border: 1px $s4t_clrGrey dashed;
+      border-bottom: 0;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+
+      &-account {
+        margin: 0;
+        font-family: 'GothamPro';
+        color: $s4t_clrGrey;
+        text-align: center;
+        font-size: 14px;
+        line-height: 56px;
+        &:before {
+          padding: 5px;
+          content: "\f1d8";
+          color: $s4t_clrBlue;
+          font-family: "FontAwesome";
+        }
+      }
+
+      &-btn {
+        width: 100%;
+        border: 0;
+        border-radius: 4px;
+        background: $s4t_clrBlue;
+        font-family: 'GothamPro';
+        color: $white;
+        text-align: center;
+        font-size: 14px;
+        line-height: 43px;
+        font-weight: bold;
+        position: absolute;
+        z-index: 2;
+        box-shadow: 0 7px 9px rgba(116, 161, 235, 0.35);
+        cursor: pointer;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  &__social{
+    flex-basis: 218px;
+    margin-top: 20px;
+  }
+}
+
+.strH4 {
+  margin: 0;
+  color: $s4t_purpur;
+  font-family: 'Wes';
+  text-align: center;
+  font-size: 27px;
+  line-height: 29.48px;
+}
+
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.divCenter {
+  display: block;
+  margin: auto;
+}
+
+.button-join {
+  min-height: 60px;
+  min-width: 200px;
+  background: $s4t_purpur;
+  font-family: 'GothamPro';
+  color: $white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 34px;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: 0 7px 9px rgba(157, 38, 101, 0.35);
+  padding: 0 30px;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+//======
+.memberTypes {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.memberType {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: white;
+  position: relative;
+  padding: 65px 0px 36px;
+  flex-basis: 32%;
+  min-width: 250px;
+  max-width: 330px;
+  margin-top: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px rgba(102, 0, 204, .35);
+  &__head {
+    font-family: "Wes";
+    line-height: 18.76px;
+    text-align: center;
+    color: white;
+    min-height: 100px;
+    min-width: 105px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--one-month {
+      background: url("../img/landing-club/bg-memberType-1month.png") no-repeat center;
+    }
+    &--three-month {
+      background: url("../img/landing-club/bg-memberType-3month.png") no-repeat center;
+    }
+    &--one-year {
+      background: url("../img/landing-club/bg-memberType-1year.png") no-repeat center;
+    }
+
+    &-first {
+      font-size: 50px;
+      margin: 9px;
+    }
+
+    &-second {
+      font-size: 19.54px;
+      margin: 0;
+    }
+  }
+
+  &__ul {
+    list-style-image: url("../img/landing-club/memberType_v.png");
+    padding: 0 20px 0 45px;
+  }
+  &__li {
+    font-family: 'GothamPro';
+    color: $s4t_clrGrey;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  &__price-box {
+    margin-bottom: 25px;
+    background: url("../img/landing-club/bg-memberType-price.png") no-repeat center;
+    background-size: cover;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  &__price-text {
+    text-align: center;
+    flex-basis: 100%;
+    margin: 0;
+  }
+  &__priceDes {
+    display: inline-block;
+    max-width: 45%;
+    text-align: right;
+    color: $s4t_clrGrey;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &__price {
+    font-family: 'GothamPro';
+    color: $s4t_clrPurpur2;
+    font-size: 33px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  &__price:before {
+    content: url("../img/landing-club/memberTypebedge.png");
+    margin: 0 5px;
+  }
+  &__button {
+    background: $s4t_clrBlockHeader;
+    box-shadow: 0 7px 9px rgba(111, 0, 185, 0.35);
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.clubMember {
+  padding: 50px 0;
+  background: $s4t_clrBGgrey;
+  //min-height: 650px;
+  .flexBox {
+    padding: 25px 0;
+  }
+}
+
+//=====
+.capability {
+  padding: 20px 27px 27px;
+  &__item {
+    margin-top: 20px;
+    margin-left: 22px;
+    background: $s4t_purpur1;
+    padding: 0 35px;
+    font-family: 'GothamPro';
+    color: $white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 60px;
+  }
+  &__item--img {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: 20px;
+  }
+}
+
+.clubGuest {
+  background: url("../img/landing-club/bg-fifth.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 442px;
+  padding: 55px 0;
+  .strH3 {
+    color: $white;
+  }
+  &__pDescription {
+    padding-top: 25px;
+    font-family: 'GothamPro';
+    color: $white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 34px;
+  }
+  &__pCapability {
+    padding-top: 25px;
+    font-family: 'GothamPro';
+    color: $white;
+    text-align: center;
+    font-size: 32.27px;
+    line-height: 23.78px;
+  }
+  .button-join {
+    background: $s4t_clrBlockHeader;
+    box-shadow: 0 7px 9px rgba(111, 0, 185, 0.35);
+  }
+}
+
+.club-cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-bottom: 44px;
+  &__footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    &-btn-leader {
+      min-height: 60px;
+      width: 225px;
+      background: $s4t_purpur;
+      font-family: 'GothamPro';
+      color: $white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 19px;
+      border: 0px;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(176, 34, 91, 0.24);
+      padding: 0 30px;
+      margin-top: 15px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.club-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 10px;
+  font-family: 'GothamPro';
+  color: $card-content;
+  text-align: center;
+  font-size: 15px;
+  line-height: 26px;
+
+  &__head {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__new {
+    position: absolute;
+    color: white;
+    font-family: "Wes";
+
+    &-date {
+      font-size: 50px;
+      margin: 10px;
+    }
+
+    &-month {
+      font-size: 17.3px;
+      margin: 0;
+    }
+
+    &:after {
+      content: url("../img/landing-club/city/opening-soon.png");
+      position: absolute;
+      bottom: 50%;
+      margin-bottom: -10px;
+      right: -60px;
+    }
+
+  }
+
+  &-country {
+    min-width: 170px;
+    min-height: 115px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__text {
+      position: relative;
+      text-align: center;
+      margin-left: -30px;
+      &:after {
+        position: absolute;
+        bottom: -44px;
+        right: -50px;
+        content: url("../img/landing-club/cityCountryArrowLeft.png");
+      }
+    }
+  }
+  &__name {
+    &:before {
+      content: url("../img/landing-club/city/marker.png");
+      margin-right: 5px;
+    }
+  }
+}
+
+.clubQuestions {
+  background: url("../img/landing-club/bg_seventh.png") center no-repeat;
+  background-size: cover;
+  min-height: 650px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  .QuestionsUl {
+    column-count: 2;
+    counter-reset: counterQuestions;
+    margin-top: 50px;
+    &__li {
+      list-style-type: none;
+      color: $white;
+    }
+    &__link {
+      color: $white;
+      border-bottom: 1px dashed #f95796;
+      &--collapse {
+        color: $white;
+        font-family: "GothamPro";
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        position: relative;
+        margin-left: 40px;
+        &:before {
+          content: url("../img/landing-club/collapse-arrow.png");
+          position: absolute;
+          left: -35px;
+          top: 0;
+        }
+      }
+      &--paragraph {
+        margin-top: 15px;
+      }
+      &:hover {
+        text-decoration: none;
+        opacity: 0.85;
+      }
+      &:focus {
+        text-decoration: none;
+        opacity: 0.85;
+      }
+      &:active {
+        text-decoration: none;
+        opacity: 0.85;
+      }
+    }
+    &__li:before {
+      counter-increment: counterQuestions;
+      content: counter(counterQuestions);
+      font-family: 'GothamPro-Bold';
+      opacity: 0.13;
+      margin-left: -10px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      color: $white;
+      position: absolute;
+    }
+  }
+}
+
+
+
+
+
+.teacher {
+  flex-basis: 33%;
+  &__img {
+    height: 202px;
+  }
+  &__name {
+    font-family: 'Wes';
+    display: block;
+    color: $team-header;
+    text-align: center;
+    font-size: 34px;
+    line-height: 34px;
+  }
+  &__position {
+    font-family: 'Wes';
+    display: block;
+    background: url("../img/landing-club/bg_teacherCity.png") center no-repeat;
+    background-size: cover;
+    color: $team-content;
+    text-align: center;
+    font-size: 15px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+  &__city {
+    font-family: 'Wes';
+    display: block;
+    margin: 5px;
+    font-family: 'Wes';
+    color: $s4t_clrTeacherCity;
+    text-align: center;
+    font-size: 16px;
+    line-height: 29px;
+    &:before {
+      content: url("../img/landing-club/city/marker.png");
+      margin-right: 5px;
+    }
+  }
+}
+
+.clubOurTeam {
+  background: url("../img/landing-club/bg_ourTeam.png") center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  //min-height: 650px;
+  padding-top: 120px;
+  .carousel {
+    padding: 75px;
+  }
+
+  .flexBox {
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+  .carousel-control-prev {
+    left: -135px !important;
+  }
+  .carousel-control-prev-icon {
+    height: 40px;
+    width: 40px;
+    background: url("../img/landing-club/carousel_arrowLeft.png") center no-repeat;
+  }
+  .carousel-control-next {
+    right: -135px !important;
+  }
+  .carousel-control-next-icon {
+    height: 40px;
+    width: 40px;
+    background: url("../img/landing-club/carousel_arrowRight.png") center no-repeat;
+  }
+}
+
+.club-city__img {
+  max-width: 164px;
+}
+
+@media (max-width: 1199px) {
+  .landing-club {
+    &__advantages {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .memberTypes {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-club {
+    &__why-club {
+
+      &-descript {
+        padding: 25px 25px 25px 0;
+      }
+
+      &-reason {
+        margin-top: 20px;
+        &--left:after {
+          display: none;
+        }
+        &--center:after {
+          display: none;
+        }
+        &--right:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+

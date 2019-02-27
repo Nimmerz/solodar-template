@@ -1,0 +1,104 @@
+@import "vars";
+
+
+.meet-club {
+	background: url('../img/meets-club/back-meets.png') center no-repeat;
+	background-size: cover;
+	min-height: 1275px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&--section-one {
+			margin-bottom: 30px;
+		}
+		&--header {
+			color: $meet-header;
+			font-family: 'wesregular';
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 39px;
+			max-width: 370px;
+			word-wrap: break-word;
+			margin: 15px auto;
+			text-align: center;
+		}
+		&--meet-block {
+			min-width: 715px;
+			position: relative;
+			box-shadow: none;
+			&:before {
+				content: url("../img/meets-club/up-col.png");
+				position: absolute;
+				top: -13px;
+				left: 0;
+			}
+			&:after {
+				content: url("../img/meets-club/down-col.png");
+				position: absolute;
+				bottom: -23px;
+				left: 0;
+			}
+		}
+		&--meet-inner {
+			color: #404046;
+			font-family: 'wesregular';
+			font-size: 22px;
+			font-weight: 400;
+			line-height: 30px;
+			text-align: center;
+		}
+		&--meet-checkbox {
+			text-align: left;
+		}
+
+		&--meet-label {
+			color: #8c7d82;
+			font-family: 'GothamPro-Medium';
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 21px;
+			padding-left: 0;
+			display: flex;
+			&:hover {
+				color: $span-statistic;
+			}
+			input {
+				display: none;
+			}
+			span {
+				width: 18px;
+				height: 17px;
+				border: 2px solid #a99ca0;
+				display: inline-block;
+				position: relative;
+				margin-right: 18px;
+			}
+		}
+		&--meet-check:checked + span:before {
+			content: '';
+			background: url(../img/choose-course/checked.png) center no-repeat;
+			background-size: contain;
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			border: 2px solid $span-statistic;
+			width: 18px;
+			height: 17px;
+			color: $span-statistic;
+
+		}
+		&--meet-button {
+			margin: 30px 0;
+		}
+		&--meet-content {
+			margin: 0;
+		}
+	}
+}

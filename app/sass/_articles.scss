@@ -1,0 +1,318 @@
+$articles-text-grey: #333333;
+$articles-text-light-grey: #999999;
+$articles-text-rose: #ff3399;
+$articles-text-violet: #9933cc;
+$articles-nav-blue: #6633cc;
+
+
+.articles {
+  padding: 0;
+  //TOOLS
+  &-margin0 {
+    margin: 0;
+  }
+
+  &-social {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:focus{
+      outline: none;
+    }
+    &--twitter {
+      background: #7CCEFF url("../img/articles/socials/t.svg") no-repeat center;
+    }
+    &--facebook {
+      background: #6D7EC2 url("../img/articles/socials/f.svg") no-repeat center;
+    }
+    &--vk {
+      background: #86A3C5 url("../img/articles/socials/vk.svg") no-repeat center;
+    }
+    &--google {
+      background: #E67A6F url("../img/articles/socials/G+.svg") no-repeat center;
+    }
+    &--odnoklassniki {
+      background: #F6AC6C url("../img/articles/socials/ок.svg") no-repeat center;
+    }
+  }
+
+  //
+  &__heading {
+    color: $articles-text-grey;
+    font-family: 'GothamPro-Medium';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 30px;
+    //margin-left: 30px;
+  }
+
+  &-nav {
+    margin-bottom: 20px;
+    &__items {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      display: inline-block;
+      font-family: "GothamPro-Medium";
+      font-size: 13px;
+      padding: 20px 30px;
+      border-radius: 2px;
+      &-text {
+        color: $articles-nav-blue;
+        border-bottom: 1px dashed $articles-text-rose;
+        &:hover, &:focus{
+          text-decoration: none;
+        }
+      }
+      &--active, &:hover {
+        background: white;
+        .articles-nav__item-text {
+          color: $articles-text-grey;
+          text-decoration: none;
+          border: none;
+        }
+      }
+    }
+  }
+
+  &__search {
+    &-form {
+      background: white;
+      width: 100%;
+      border-radius: 2px;
+      border: 2px solid #f0e9f0;
+      border-top: none;
+      padding: 18px 30px;
+      vertical-align: middle;
+    }
+
+    &-search {
+      width: calc(100% - 32px);
+      border: none;
+      font-family: GothamPro;
+      font-size: 13px;
+      color: $articles-text-grey;
+      outline: none;
+    }
+    &-submit {
+      cursor: pointer;
+      border: none;
+      background: white;
+      &:focus {
+        outline: none;
+      }
+      &:before {
+        color: $articles-text-light-grey;
+        font-family: "FontAwesome";
+        content: "\f002 ";
+      }
+    }
+  }
+
+  &-boxArts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-boxArt {
+    background: white;
+    font-family: "GothamPro-Medium";
+    color: $articles-text-grey;
+    max-width: 374px;
+    flex-basis: 374px;
+    padding: 28px;
+    border-radius: 2px;
+    border: 2px solid #f0e9f0;
+
+    margin-top: 20px;
+
+    &__date {
+      font-size: 11px;
+      margin: 0;
+    }
+
+    &__heading {
+      margin: 0;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $articles-text-violet;
+      &-prefix {
+        color: $articles-text-rose;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 16px;
+      color: $articles-text-grey;
+    }
+
+    &__mid {
+      width: 100%;
+      min-height: 310px;
+      &-img {
+        max-width: 100%;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 13px;
+      &-comments {
+        font-size: 13px;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f0e5";
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &-last {
+    margin: 25px 0 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__btn-next {
+      flex-grow: 1;
+      background: white;
+      font-family: "GothamPro-Medium";
+      font-size: 11px;
+      text-transform: uppercase;
+      color: $articles-text-grey;
+      padding: 28px;
+      border-radius: 4px;
+      border: 2px solid #f0e9f0;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &-pager {
+      position: relative;
+      &__btn-choose-page {
+        background: white url("../img/articles/decor-select-chevron.png") no-repeat center right 28px;
+        font-family: "GothamPro-Medium";
+        font-size: 13px;
+        color: $articles-text-grey;
+        padding: 28px 40px 28px 28px;
+        border-radius: 4px;
+        border: 2px solid #f0e9f0;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &__list {
+        display: none; //none || flex
+        background: white;
+        border-radius: 4px;
+        border: 2px solid #f0e9f0;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: -35px;
+        right: 0;
+      }
+      &__list-item {
+        display: inline-block;
+        font-family: "GothamPro-Medium";
+        font-size: 13px;
+        padding: 1px 8px;
+        &:hover, &--active{
+          background: #f4eef5;
+        }
+        a{
+          color: $articles-text-grey;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.modal-rubrics{
+  &__wrap-box{
+    width: 90% !important;
+    max-width: 374px !important;
+    height: 100%;
+  }
+  &__btnClose{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1;
+    top: -25px;
+    right: -25px;
+    border-radius: 50%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    &:hover{
+      background: #F4EEF5;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  &__box{
+    position: relative;
+    background: white;
+    font-family: "GothamPro-Medium";
+    font-size: 13px;
+    color: $articles-text-grey;
+    padding: 28px;
+    border-radius: 2px;
+    border: 2px solid #f0e9f0;
+    margin: 10% auto;
+    text-align: center;
+    max-height: calc(100vh - 10%);
+    display: flex;
+    flex-direction: column;
+  }
+  &__list{
+    margin-top: 28px;
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    text-align: left;
+    &-link{
+      color: $articles-text-grey;
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .articles{
+    min-width: 100% !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .articles-boxArts {
+    justify-content: space-evenly;
+  }
+}

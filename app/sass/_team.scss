@@ -1,0 +1,93 @@
+$s4t_clrTeamTeacherName: #6600cc;
+$s4t_clrTeamTeacher_bgBtn: #9933cc;
+$s4t_clrTeamTeacher_yourCity: #333333;
+
+.main-content__team {
+  margin-top: 20px;
+  &--yourCity{
+    font-family: "GothamPro-Medium";
+    font-size: 18px;
+    line-height: 26px;
+    color: $s4t_clrTeamTeacher_yourCity;
+    margin: 25px 0 25px;
+    padding: 0 25px;
+  }
+}
+
+.team-teacher {
+  max-width: 863px;
+  max-height: 171px;
+  background: url("../img/team/bgTeacher.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 20px;
+  &__imgWrap{
+    min-width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  //TO DO LEFT AND RIGHT BORDERS
+
+  &__middle {
+    min-height: 160px;
+    padding: 10px 0;
+    &-name {
+      font-family: "Wes";
+      font-size: 24px;
+      line-height: 25px;
+      color: $s4t_clrTeamTeacherName;
+      margin: 25px 0 0;
+      padding: 0;
+    }
+    .bgCurator{
+      background: url("../img/team/bgCurator.png") no-repeat center;
+    }
+    .bgManager{
+      background: url("../img/team/bgManger.png") no-repeat center;
+    }
+    .bgVasilisa{
+      background: url("../img/team/bgVasilisa.png") no-repeat center;
+    }
+    &-position{
+      display: inline-block;
+      font-family: "GothamPro-Bold";
+      font-size: 9px;
+      line-height: 21px;
+      color: $white;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0 5px 0  ;
+    }
+    &-words{
+      font-family: "GothamPro";
+      font-size: 12px;
+      line-height: 18px;
+      color: $card-content;
+      margin: 10px 0 0;
+    }
+
+  }
+  &__last {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__button{
+    font-family: "GothamPro";
+    font-size: 12px;
+    line-height: 23px;
+    color: $white;
+    background: $s4t_clrTeamTeacher_bgBtn;
+    padding: 15px 30px;
+    border-radius: 3px;
+    box-shadow: 0 7px 9px -1px (205,204,255 0.5);
+    //TO DO SHADOW
+    &:hover{
+      background: black;
+      //TO DO
+    }
+  }
+
+}

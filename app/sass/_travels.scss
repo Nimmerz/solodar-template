@@ -1,0 +1,214 @@
+$s4t_clrGrey:#333333;
+$s4t_clrGrey2:#333366;
+$s4t_clrViolet:#6600cc;
+$s4t_clrPink:#ff3366;
+$s4t_clrPink2:#ff6699;
+$s4t_clrHeaderLong:#333399;
+$s4t_clrHeaderGrey:#999999;
+
+
+
+
+
+
+.button--clrPurpure{
+   background: $s4t_clrPink2;
+   &:hover{
+     background: $s4t_clrPink;
+     //TODO HOVER COLOR ????
+   }
+}
+.button--clrViolet{
+  background: $s4t_clrViolet;
+  &:hover{
+    background: $s4t_clrPink;
+    //TODO HOVER COLOR ????
+  }
+}
+.travels__separator-month{
+  font-family: "Wes";
+  font-size: 18px;
+  line-height: 26px;
+  color: $s4t_clrGrey2;
+  padding: 6px 0 6px 30px;
+  background: url("../img/travels/bg_SeparatorMonth.png") no-repeat bottom;
+  margin: 10px 0;
+}
+.travels-citySelect{
+  font-family: "GothamPro";
+  font-size: 12px;
+  padding: 9px 10px;
+  color: $s4t_clrViolet;
+  //color: $s4t_clrHeaderGrey;
+  //TODO COLORS FONT || CARRET
+  //TODO MEDIA
+  border-radius: 2px;
+  border: none;
+  box-shadow: 1px 1px 2px $s4t_clrHeaderGrey;
+  position: relative;
+
+}
+.travels{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.travels-header{
+  font-family: "GothamPro-Medium";
+  font-size: 18px;
+  line-height: 26px;
+  color: $s4t_clrGrey;
+  margin: 24px 30px;
+  flex-basis: 100%;
+}
+.travels-short-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  //opacity: 0.5;
+  padding: 0 12px 0 27px;
+  &__terms{
+    position: absolute;
+    padding: 4px 10px;
+    top: -16px;
+    left: 64px;
+    background: white;
+    font-family: "GothamPro-Medium";
+    font-size: 12px;
+    line-height: 26px;
+    color: $s4t_clrGrey;
+    background: url("../img/travels/bg-terms.png") center no-repeat;
+    background-size: cover;
+  }
+  &__weekend{
+    margin: 20px 0;
+    font-family: "Wes";
+    font-size: 18px;
+    line-height: 26px;
+    color: $s4t_clrPink;
+    &:before{
+      content: url("../img/travels/weekend.png");
+      margin-right: 10px;
+    }
+  }
+}
+.travels-long-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  //opacity: 0.5;
+  padding: 0 12px 0 27px;
+  &__longTravel{
+    margin: 20px 0;
+    font-family: "Wes";
+    font-size: 18px;
+    line-height: 26px;
+    color: $s4t_clrHeaderLong;
+    &:before{
+      //TODO BAG COLOR ?????
+      content: url("../img/travels/bag.png");
+      margin-right: 10px;
+    }
+  }
+}
+
+.travels-item{
+  background: $white;
+  //url("../img/travels/items/border-bottom.png") no-repeat bottom;
+  background-size: 100% ;
+  padding: 10px;
+  margin: 0 0 20px;
+  //border-image: url("../img/travels/items/border-bottom.png")  ;
+  //TODO
+  &__photo{
+    max-width: 100%;
+    height: 176px;
+  }
+  &__content {
+    padding: 20px 16px 15px;
+    &-description {
+      font-family: "GothamPro-Medium";
+      font-size: 15px;
+      line-height: 22px;
+      color: $s4t_clrViolet;
+      margin: 0;
+    }
+    &-time{
+      font-family: "GothamPro";
+      font-size: 12px;
+      line-height: 22px;
+      color: $s4t_clrGrey;
+      margin: 0;
+    }
+    &-contacts{
+      font-family: "GothamPro-Medium";
+      font-size: 14px;
+      line-height: 21px;
+      color: $s4t_clrGrey;
+      margin: 0;
+      &:before{
+        font-family: "FontAwesome";
+        content: "\f095";
+        color: $s4t_clrPink;
+        margin-right: 8px;
+      }
+    }
+  }
+  &__content-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &__button-more{
+    font-family: "GothamPro-Medium";
+    font-size: 12px;
+    line-height: 32px;
+    color: $white;
+    padding: 0 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__button-heart{
+    height: 26px;
+    width: 28px;
+    background: url("../img/travels/items/heart.png");
+  }
+}
+.travels-history{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__header{
+    font-family: "GothamPro-Medium";
+    font-size: 18px;
+    line-height: 26px;
+    color: $s4t_clrGrey;
+    margin: 0 30px 24px;
+    flex-basis: 100%;
+  }
+  &__item{
+    min-height: 174px;
+    flex-basis: 22%;
+    background: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+}
+@media  (max-width: 767px){
+  .travels-history{
+    &__item{
+      flex-basis: 30%;
+    }
+  }
+}

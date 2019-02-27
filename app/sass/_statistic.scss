@@ -1,0 +1,343 @@
+@import "vars";
+
+.cabinet-statistic___content {
+	background-color: white;
+	padding: 35px 35px 15px 35px;
+	overflow: hidden;
+	position: relative;
+	&--home-select {
+		padding-right: 14px;
+	}
+	&--float {
+		float: right;
+	}
+
+    &--width {
+		min-height: 700px;
+	}
+
+	&--first {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&--line {
+		display: block;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 70px;
+	}
+	&--first-txt {
+		color: $roof-content;
+		font-family: "GothamPro";
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 25px;
+	}
+
+	&--first-span {
+		background-color: #ffd3e2;
+		font-family: "GothamPro";
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 14px;
+		padding: 6px;
+	}
+	&--first-link {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	&--second {
+		display: flex;
+		flex-direction: row;
+		margin-top: 30px;
+	}
+	&--second-was {
+		padding-left: 0;
+
+	}
+	&--second-stay {
+		padding-right: 0;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			border: 1px dotted #bfbfbf;
+			height: 100%;
+			top: 0px;
+			left: -10px;
+		}
+	}
+
+	&--was-first {
+		color: $card-content;
+		font-family: "GothamPro";
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 29px;
+	}
+	&--was-second {
+		color: $aside-color;
+		font-family: "GothamPro";
+		font-style: italic;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 19px;
+		max-width: 372px;
+		word-wrap: break-word;
+	}
+
+	&--stay-first {
+		color: $statistic-col;
+		font-family: "GothamPro";
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 29px;
+	}
+	&--stay-sec {
+		color: $statistic-col;
+		font-family: "GothamPro";
+		font-style: italic;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 19px;
+		max-width: 372px;
+		word-wrap: break-word;
+	}
+	&--hobby-start {
+		color: $card-content;
+		font-family: "GothamPro";
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 29px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	&--hobby {
+		display: inline-block;
+		color: $card-content;
+		font-family: "GothamPro";
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 29px;
+		box-shadow: 0 1px 0 rgba(83, 55, 104, 0.2);
+		border-radius: 7px;
+		background-color: #f6ecff;
+		padding: 5px 10px;
+	}
+	&--hobbies {
+		margin-top: 20px;
+	}
+	&--padding-top {
+		padding-top: 0;
+	}
+	&--white {
+		background: $white;
+	}
+	&--statistic {
+		border-top: 2px solid #ebe1e8;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding-top: 20px;
+		justify-content: space-between;
+	}
+
+	&--selects {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+	}
+
+
+	&--select-main {
+		color: $statistic-black;
+		border-radius: 3px;
+		background-color: #f8f0f5;
+		box-shadow: 0 2px 0 #ecdae8;
+		font-family: "GothamPro";
+		font-size: 19px;
+		font-weight: 300;
+		line-height: 25px;
+	}
+
+	&--select-one {
+		background-color: $white;
+		box-shadow: 0 1px 0 #ecdae8;
+		border-radius: 3px;
+		padding-left: 15px;
+		color: $statistic-green;
+		font-family: "GothamPro";
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18.67px;
+	}
+	&--select-two {
+		background-color: $white;
+		box-shadow: 0 1px 0 #ecdae8;
+		border-radius: 3px;
+		padding-left: 10px;
+		color: $statistic-black;
+		font-family: "GothamPro";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 18.67px;
+	}
+
+	&--right-card {
+		color: $statistic-right-green;
+		font-family: "GothamPro";
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 19.03px;
+		margin-bottom: 0;
+	}
+	&--right-card-no {
+		color: $span-statistic;
+	}
+	&--right-card-check {
+		color: $blue-check;
+	}
+	&--approve {
+		margin-right: 10px;
+	}
+
+	&--img-tab {
+		max-width: 20px;
+	}
+
+	&--right-context {
+		padding:0 30px;
+	}
+
+	&--right-icons {
+		color: $card-content;
+		font-family: "GothamPro";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 30px;
+		display: flex;
+		flex-direction: row;
+		align-items: unset;
+		justify-content: space-between;
+	}
+	&--ic-left {
+		color: $statistic-icons;
+		font-size: 20px;
+		margin-right: 10px;
+	}
+	&--ic-right {
+		color: $statistic-icons;
+		font-size: 20px;
+		&:hover {
+			color: $statistic-icons;
+			text-decoration: none;
+			opacity: 0.8;
+		}
+	}
+	&--inner-icons {
+		display: flex;
+		align-items: center;
+	}
+
+	&--right-padding {
+		padding: 10px;
+	}
+
+	&--right-text-upgrade {
+		box-shadow: 0 1px 3px #e0d8e0;
+		background-color: $review-content;
+		position: relative;
+		margin: 20px 10px;
+		padding: 45px 20px 20px 20px;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: -10px;
+			left: 20px;
+			border-left: 0px solid transparent;
+			border-right: 15px solid transparent;
+			border-bottom: 11px solid $review-content;
+		}
+	}
+
+	&--right-upgrade-one {
+		color: $aside-color;
+		font-family: "GothamPro";
+		font-size: 12px;
+		font-style: italic;
+		line-height: 20px;
+		max-width: 192px;
+		word-wrap: break-word;
+	}
+
+	&--right-upgrade-sec {
+		color: $black;
+		font-family: "GothamPro";
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 24px;
+		opacity: 0.5;
+	}
+
+	&--right-girl-plus {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 35px 10px;
+		padding: 0 14px;
+	}
+
+	&--right-girl-paragraph {
+		font-family: "GothamPro-Bold";
+		color: $paragraph-statistic;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 20px;
+		max-width: 161px;
+		word-wrap: break-word;
+	}
+	&--right-girl-span {
+		color: $span-statistic;
+	}
+
+	&--right-girl-link {
+		box-shadow: 0 1px 2px #5c1d89;
+		border-radius: 3px;
+		background-color: $color-girl-club;
+	}
+
+	&--right-girl-img {
+		max-width: 58px;
+	}
+
+	&--club-number {
+		color: #69dc53;
+		font-family: "GothamPro-Bold";
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 9.25px;
+		border: 1px solid #69dc53;
+		border-radius: 50%;
+		padding: 6px 4px 5px 4px;
+		margin-right: 10px;
+	}
+
+	&--club-margin {
+		margin-right: 10px;
+	}
+
+	&--height {
+		padding-top: 20px;
+		padding-bottom:15px;
+		min-height: 120px;
+	}
+
+	&--list {
+		min-height: 120px;
+	}
+}

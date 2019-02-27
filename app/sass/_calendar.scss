@@ -1,0 +1,500 @@
+@import "vars";
+//CALENDAR START
+$calendar-days: #9933cc;
+
+#calendar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-family: "Wes";
+}
+
+#calendar_weekdays div {
+  display: inline-block;
+  vertical-align: top;
+  color: $calendar-days !important;
+}
+
+#calendar_content, #calendar_weekdays, #calendar_header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  z-index: 10;
+}
+
+#calendar_weekdays div, #calendar_content div { //DAYS
+  //font-family: "Wes";
+  font-size: 18px;
+  padding: 15px;
+  width: 40px;
+  height: 40px;
+  //overflow: hidden;
+  //text-align: center;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+.calendar-day-balloons{
+  position: relative;
+  background-color: rgba(51, 153, 204 , 0.03) !important;
+  &:after{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    content: url("../img/calendar/calendar-balloons.png");
+  }
+}
+
+.calendar-day-balloon-red{
+  position: relative;
+  background-color: rgba(255, 102, 153 , 0.03) !important;
+  &:after{
+    position: absolute;
+    top: 35px;
+    left: 44px;
+    content: url("../img/calendar/calendar-balloon-red.png");
+  }
+  &:hover:before{
+    position: absolute;
+    right: -170px;
+    bottom: 0px;
+    min-width: 180px;
+    content: "Встреча подруг плюс";
+    font-family: "GothamPro-Medium";
+    font-size: 14px;
+    line-height: 25px;
+    color: white;
+    background:#ff99cc;
+    border-radius: 4px;
+    padding: 0 10px;
+  }
+  //&:hover:after{
+  //  content: "";
+  //  position: absolute;
+  //  right: -12px;
+  //  width: 0;
+  //  height: 0;
+  //  border-top: 10px solid transparent;
+  //  border-bottom: 10px solid transparent;
+  //  border-right: 10px solid #ff99cc;
+  //}
+}
+.calendar-day-balloon-blue{
+  position: relative;
+  background-color: rgba(153, 102, 255 , 0.03) !important;
+  &:after{
+    position: absolute;
+    top: 35px;
+    left: 44px;
+    content: url("../img/calendar/calendar-balloon-blue.png");
+  }
+}
+
+#calendar_content {
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-border-radius: 0px 0px 12px 12px;
+  -moz-border-radius: 0px 0px 12px 12px;
+  border-radius: 0px 0px 12px 12px;
+}
+
+#calendar_content div {
+  //float: left;
+  min-width: 118px;
+  max-width: 150px;
+  flex-grow: 1;
+  height: 119px;
+
+}
+
+#calendar_content div:hover {
+  background-color: #F8F8F8;
+}
+
+#calendar_content div.blank {
+  background-color: #E8E8E8;
+}
+
+#calendar_header, #calendar_content div.today {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+
+#calendar_content div.today {
+  color: #FFFFFF;
+  background-color: $calendar-days !important;
+}
+
+#calendar_header {
+  width: 100%;
+  height: 107px;
+  position: relative;
+  text-align: center;
+  //background-color: #FF6860;
+  background-color: transparent !important;
+  background: url("../img/calendar/bg_calendar_heading.png") no-repeat center;
+  background-size: 100% 100%;
+  padding: 18px 0;
+  -webkit-border-radius: 12px 12px 0px 0px;
+  -moz-border-radius: 12px 12px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+#calendar_header h1 { //MONTH IN CALENDAR HEADER
+  margin-top: 36px;
+  font-size: 24px;
+  color: white;
+  //float: left;
+  width: 100%;
+}
+
+//i[class^=icon-chevron] {
+//  color: black;
+//  //float: left;
+//  width: 15%;
+//  border-radius: 50%;
+//}
+.icon-chevron-left{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: black;
+  width: 15%;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.icon-chevron-right{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: black;
+  width: 15%;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
+//CALENDAR STOP
+.calendar-content-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calendar-city {
+  &__select {
+    border: 2px solid rgba(153, 153, 153, 0.2);
+    box-shadow: 0px 5px 5px rgba(153, 153, 153, 0.2);
+    background: white;
+    border-radius: 3px;
+    color: #999999;
+    padding: 10px 20px;
+  }
+  &__option {
+    font-family: 'GothamPro';
+    color: #999999;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
+
+.calendar-first {
+  width: 100%;
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-bottom: 20px;
+  }
+  &__header {
+    color: $moreblack;
+    font-family: 'GothamPro-Medium';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 45px;
+    margin-left: 30px;
+  }
+}
+
+.calendar-second {
+  margin-top: 30px;
+  &__approwe {
+    background: $salat;
+    position: relative;
+    padding: 10px 0 10px 55px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: "GothamPro";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.98px;
+    max-width: 404px;
+    border-radius: 4px;
+  }
+  &__approwe-img {
+    position: absolute;
+    left: -7px;
+    top: -4px;
+    border-radius: 50px;
+    border: 4px solid $white;
+  }
+  &__blog {
+    background: url("../img/meets/content-back.png") center no-repeat;
+    background-size: cover;
+    min-height: 162px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    &--data {
+      color: $white;
+      font-family: 'wesregular';
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 17px;
+      position: relative;
+      margin: 0 45px;
+      &:before {
+        content: url(../img/meets/meets-arrowleft.png);
+        position: absolute;
+        left: -25px;
+        top: -6px;
+      }
+      &:after {
+        content: url(../img/meets/meets-arrowright.png);
+        position: absolute;
+        right: -25px;
+        top: -6px;
+      }
+    }
+    &--span {
+      font-size: 17px;
+      line-height: 21px;
+    }
+    &--header {
+      font-family: 'wesregular';
+      font-size: 24px;
+      line-height: 25px;
+      color: $white;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+    &--learn {
+      font-family: "GothamPro";
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase;
+      background: url(../img/meets/knowledge.png) center no-repeat;
+      background-size: contain;
+      margin: 4px 0 0 15px;
+      padding: 5px;
+    }
+    &--online {
+      font-family: "GothamPro";
+      font-size: 9px;
+      font-weight: 700;
+      line-height: 21px;
+      text-transform: uppercase;
+      background: url(../img/calendar/bg-online.png) center no-repeat;
+      background-size: contain;
+      margin: 4px 0 0 15px;
+      padding: 5px;
+    }
+    &--content {
+      font-family: "GothamPro";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 25px;
+      color: $white;
+    }
+    &--phone {
+      color: $white;
+      font-family: "GothamPro";
+      font-weight: 500;
+      line-height: 21px;
+      font-size: 14px;
+      i {
+        color: $purpur-col;
+        margin-right: 10px;
+
+      }
+      &:hover {
+        opacity: 0.8;
+        text-decoration: none;
+        color: $white;
+      }
+    }
+    &--org {
+      color: $white;
+      font-family: "GothamPro";
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 21px;
+      position: relative;
+      margin-left: 15px;
+      &:hover {
+        color: $white;
+        text-decoration: none;
+        opacity: 0.8;
+      }
+      &:before {
+        content: '';
+        border-left: 2px solid $white;
+        height: 16px;
+        position: absolute;
+        z-index: 2;
+        top: -3px;
+        left: -11px;
+      }
+      &:after {
+        content: '';
+        border-right: 2px solid $white;
+        height: 16px;
+        position: absolute;
+        z-index: 2;
+        top: -3px;
+        right: -13px;
+      }
+    }
+    &--third {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 200px;
+    }
+
+    &--favorites-add {
+
+      display: block;
+      width: 22px;
+      height: 20px;
+      background: url("../img/calendar/heart-favorites-add.png") no-repeat center;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        &:after {
+          position: absolute;
+          top: -30px;
+          right: -110px;
+          color: white;
+          text-transform: uppercase;
+          font-family: "GothamPro-Bold";
+          font-size: 9px;
+          line-height: 12px;
+          width: 100px;
+          text-align: center;
+          content: "Еще не знаю, смогу ли пойти. Добавить в избранное";
+          //background: url("../img/calendar/heart-favorites-add-bg-text.png") no-repeat center;
+          //background-size: 100% 100%;
+          background: #ff9999;
+          box-shadow: 0px 5px 5px rgba(255, 153, 153, 0.2);
+          border-radius: 4px;
+          padding: 15px;
+
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          right: -12px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 10px solid #ff9999;
+        }
+      }
+    }
+    &--favorites-added {
+      display: block;
+      width: 22px;
+      height: 20px;
+      background: url("../img/calendar/heart-favorites-added.png") no-repeat center;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &--link {
+      color: $white;
+      font-family: "GothamPro";
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 23.16px;
+      border-radius: 3px;
+      background-color: #a363cd;
+      padding: 10px 25px;
+      margin: 10px;
+      &:hover {
+        color: $white;
+        text-decoration: none;
+        opacity: 0.8;
+
+      }
+    }
+  }
+}
+
+.green-meet {
+  background: $green;
+  padding-left: 28px;
+  padding-right: 28px;
+  box-shadow: none;
+}
+
+.btn-width {
+  max-width: 143px;
+  margin-top: 5px;
+}
+
+.margin-meet-sec {
+  margin: 0 15px;
+  .guest-question {
+    margin-bottom: 0;
+    position: relative;
+    &:before {
+      content: url('../img/meets-sec/question-icon.png');
+      position: absolute;
+      left: -25px;
+    }
+  }
+}
+
+.meet-pay {
+  background: url('../img/meets-sec/back-question.png') center no-repeat;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  min-height: 158px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__paragraph {
+    color: $aside-color;
+    font-family: 'GothamPro-Medium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  &__link {
+    font-family: 'wesregular';
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.16px;
+    color: $white;
+    background: url('../img/meets-sec/button-back.png') center no-repeat;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+      color: $white;
+    }
+  }
+}

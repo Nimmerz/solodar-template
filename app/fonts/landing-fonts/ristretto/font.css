@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'RistrettoPro-Regular';
+  src: url('RistrettoPro-Regular.eot');
+  src: url('RistrettoPro-Regular.woff2') format('woff2'),
+       url('RistrettoPro-Regular.woff') format('woff'),
+       url('RistrettoPro-Regular.ttf') format('truetype'),
+       url('RistrettoPro-Regular.svg#RistrettoPro-Regular') format('svg'),
+       url('RistrettoPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

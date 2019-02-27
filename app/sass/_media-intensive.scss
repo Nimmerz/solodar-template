@@ -1,0 +1,185 @@
+@media only screen and (max-width: 1200px) {
+	.intensive-section {
+		overflow: hidden;
+	}
+
+
+	.intensive-section__third-sector--number-third:before, .intensive-section__third-sector--number-sec:before,
+	.intensive-section__third-sector--number:before {
+		display: none;
+	}
+
+	.intensive-section__third-sector--head {
+		line-height: 35px !important;
+	}
+
+	.intensive-section__fifth-sector--block-one:before, .intensive-section__fifth-sector--block-sec:before,
+	.intensive-section__fifth-sector--block-third:before {
+		display: none;
+	}
+
+	.intensive-section__fifth-sector--img-two {
+		margin-left: 25px;
+	}
+
+	.intensive-section__seven-sector {
+		margin-top: 388px;
+	}
+
+	.intensive-section__eight-sector--header:after {
+		display: none;
+	}
+
+	.intensive-section__third-sector--main {
+		margin-top: 650px;
+	}
+
+	.intensive-section__fifth-sector {
+		margin-top: 540px;
+	}
+
+	.tarif-standart__btn, .tarif-vip__btn {
+		font-size: 16px;
+	}
+
+	.intensive-section__ten-sector--header:after, .intensive-section__ten-sector--header:before {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+
+	.intensive-section__third-sector--main {
+		margin-top: 445px !important;
+	}
+
+	.intensive-section__seven-sector--margin-sec:after,
+	.intensive-section__seven-sector--margin-third:after {
+		display: none;
+	}
+
+	.intensive-section__seven-sector--header {
+		font-size: 38px !important;
+	}
+
+	.intensive-section__seven-sector--margin-sec, .intensive-section__seven-sector--margin-third {
+		margin-left: 0;
+		margin-top: 40px;
+	}
+
+	.intensive-section__seven-sector {
+		margin-top: 790px;
+	}
+
+	.intensive-section__nine-sector {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.intensive-section__nine-sector--header {
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.tarif-standart, .tarif-vip {
+		min-width: 300px;
+	}
+}
+
+@media only screen and  (max-width: 768px) {
+	.intensive-section {
+		background: url("../img/landing-intensive/planshet-back.jpg") center no-repeat !important;
+		background-size: cover !important;
+		overflow: hidden;
+	}
+
+	.intensive-section__first-sector--dashed {
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 19px;
+	}
+
+	.intensive-section__second-sector--header:before {
+		display: none;
+	}
+
+	.intensive-section__third-sector--main {
+		margin-top: 15px !important;
+	}
+
+	.intensive-section__fourth-sector {
+		margin-top: 60px !important;
+	}
+
+	.intensive-section__fifth-sector--blocks {
+		flex-direction: column !important;
+	}
+
+	.intensive-section__fifth-sector--header {
+		text-align: center;
+	}
+
+	.intensive-section__fifth-sector--img-one {
+		margin-left: -40px;
+	}
+
+	.intensive-section__seven-sector {
+		margin-top: 40px;
+	}
+
+	.intensive-section__seven-sector--header {
+		text-align: center;
+		font-size: 35px!important;
+	}
+
+	.intensive-section__seven-sector--main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.tarif-standart, .tarif-vip {
+		max-width: 300px;
+		margin-top: 25px;
+	}
+
+	.intensive-section__fifth-sector {
+		margin-top: 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	.intensive-section__first-sector--before:before {
+		display: none;
+	}
+
+	.intensive-section__ten-sector--left, .intensive-section__ten-sector--right {
+		display: none;
+	}
+
+	.intensive-section__ten-sector--img {
+		width: 100%;
+	}
+
+	.intensive-section__ten-sector--item-content {
+		padding: 40px;
+	}
+
+
+
+}
+
+@media only screen and  (max-width: 470px) {
+	.intensive-section {
+		background: url("../img/landing-intensive/mobile-back.jpg") center no-repeat !important;
+		background-size: cover !important;
+	}
+
+	.intensive-section__third-sector--main {
+		flex-direction: column !important;
+	}
+
+	.intensive-section__third-sector--content, .intensive-section__third-sector--content-dots {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'hAndy';
+  src: url('hAndy.woff') format('woff'),
+       url('hAndy.ttf') format('truetype'),
+       url('hAndy.svg#hAndy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iuF99HYC';
+  src: url('iuF99HYC.eot');
+  src: url('iuF99HYC.woff2') format('woff2'),
+       url('iuF99HYC.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,239 @@
+@import "vars";
+
+
+.review-body__training {
+	display: flex;
+	flex-direction: row;
+	&--first {
+		margin-top: 50px;
+		text-align: left;
+		padding-left: 45px;
+		padding-right: 25px;
+	}
+	&--header {
+		color: $training-header;
+		font-family: "GothamPro-Bold";
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 20px;
+	}
+	&--content {
+		color: $training-header;
+		font-family: "GothamPro";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 28px;
+
+	}
+	&--content-block {
+		border-radius: 3px;
+		background-color: $white;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		min-height: 94px;
+	}
+	&--content-sec {
+		color: $training-content;
+		font-family: "GothamPro-Bold";
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 20px;
+		margin: 25px 10px 25px 15px;
+	}
+	&--content-img {
+		height: 78px;
+		margin-top: 30px;
+	}
+	&--first-btn {
+		font-family: "GothamPro";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		max-width: 384px;
+		margin-top: 40px;
+		border-radius: 0;
+		padding: 15px 0;
+		background-color: $button-training;
+	}
+	&--second {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		background-color: $back-training;
+		background-image: linear-gradient(-264deg, rgba(213, 74, 168, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%);
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&--second-messages {
+		min-height: 400px;
+		padding-left: 25px;
+		padding-right: 15px;
+		height: 400px;
+		overflow: auto;
+	}
+	&--second-block {
+		display: flex;
+		flex-direction: row;
+		margin-top: 0;
+		position: relative;
+	}
+	&--second-img {
+		height: 25px;
+		position: absolute;
+		bottom: 5px;
+	}
+	&--second-messages-date {
+		color: #8a7b97;
+		font-family: "GothamPro";
+		font-size: 10px;
+		font-weight: 500;
+		line-height: 19.07px;
+		border-radius: 13px;
+		background-color: #4e3f5b;
+		max-width: 126px;
+		min-height: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 15px auto 10px auto;
+	}
+	&--second-timedate {
+		padding: 7px 0;
+	}
+	&--second-content {
+		background-color: $second-training;
+		position: relative;
+		color: #f3edf7;
+		font-family: "GothamPro";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 19.22px;
+		word-wrap: break-word;
+		width: 100%;
+		margin-bottom: 0;
+		margin-left: 45px;
+		padding: 3px 8px 3px 14px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			bottom: 0;
+			left: -15px;
+			border-bottom: 19px solid $second-training;
+			border-left: 29px solid transparent;
+			z-index: 9;
+		}
+	}
+
+	&--second-content-receive {
+		background-color: $training-chat;
+		position: relative;
+		color: #f3edf7;
+		font-family: "GothamPro";
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 19.22px;
+		margin-bottom: 0;
+		word-wrap: break-word;
+		width: 100%;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		margin-left: 0;
+		margin-right: 45px;
+		padding: 3px 14px 3px 8px;
+		&:after {
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			bottom: 0;
+			right: -15px;
+			border-bottom: 19px solid $training-chat;
+			border-right: 29px solid transparent;
+			z-index: 9;
+		}
+	}
+	&--second-img-receive {
+		height: 25px;
+		position: absolute;
+		bottom: 5px;
+		right: 0;
+	}
+	&--second-send {
+		background-color: $second-training;
+		padding-left: 25px;
+		padding-right: 15px;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	&--second-date {
+		color: $second-date;
+		font-family: "GothamPro";
+		font-weight: 400;
+		font-size: 11px;
+		margin-left: 60px;
+	}
+	&--second-paragraph-sec {
+		color: $paragraph-sectrainig;
+		font-family: "GothamPro";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 19.22px;
+	}
+	&--second-buttons {
+		display: inline-block;
+		vertical-align:middle;
+	}
+	&--second-button {
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+		background-color: #e94eaa;
+		margin-right: 5px;
+		display: inline-block;
+		padding: 5px 10px;
+		margin-bottom: 5px;
+		font-size: 14px;
+	}
+	&--second-text-main {
+		background-color: $message-text;
+		margin-top: 20px;
+		width: 100%;
+		min-height: 144px;
+		border-radius: 2px;
+		position: relative;
+		outline: none;
+		padding-left: 15px;
+		padding-top: 15px;
+		color: $message;
+		border: 0;
+	}
+
+	&--second-text-btn-sec {
+		cursor: pointer;
+		border: none;
+		background: transparent;
+		position: absolute;
+		right: 25px;
+		bottom: 35px;
+		outline: none;
+		img {
+			width: 22px;
+		}
+	}
+
+
+}
+
+.review-body__training--second-block-both {
+	line-height: 1;
+}
+
+.review-body__training--second-content.pluswomen {
+	background-color: #e74daf;
+}
+.review-body__training--second-content.pluswomen:before {
+	border-bottom: 19px solid #e74daf;
+}

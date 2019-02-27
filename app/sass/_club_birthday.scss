@@ -1,0 +1,1485 @@
+@import "vars";
+
+$club-birthday-know: #f26a9f;
+$club-birthday-numberBig: #ff3399;
+$club-birthday-articles-head: #ff3399;
+$club-birthday-third-numberBig: #cc3333;
+$club-birthday-six-underline: #ff3366;
+$club-birthday-eventsDate: #ffcc66;
+$club-birthday-third-btn-text: #6633cc;
+$club-birthday-third-btn-bg: #ffcc33;
+$club-birthday-third-modal-bg-inp: #f9f9f9;
+$club-birthday-third-modal-bg-submit: #6633cc;
+
+@font-face {
+	font-family: "Bahiana";
+	src: url("../fonts/club-birthday/Bahiana-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Guerila";
+	src: url("../fonts/club-birthday/GUERRILLA-Normal.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.birthday-section {
+	&__main-years {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/first-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1080px;
+		position: relative;
+		padding-top: 100px;
+		&--block {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: absolute;
+			top: 730px;
+			right: 25px;
+		}
+		&--content {
+			font-family: "GothamPro";
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 19.08px;
+			text-transform: uppercase;
+			color: $club-birthday-know;
+			max-width: 300px;
+			transform: rotate(-7deg);
+		}
+
+		&--arrow {
+			margin-top: 20px;
+		}
+	}
+
+	&__first-begin {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/second-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1085px;
+		padding-top: 100px;
+		overflow: hidden;
+		&--main-block {
+			display: flex;
+			align-items: center;
+		}
+		&--header {
+			font-family: 'Bahiana';
+			font-size: 68px;
+			font-weight: 400;
+			line-height: 63.82px;
+			text-transform: uppercase;
+			color: $white;
+			margin-top: 100px;
+			transform: rotate(8deg);
+		}
+
+		&--content {
+			margin-top: 65px;
+			color: #f7f7f5;
+			font-family: 'GothamPro-Medium';
+			font-style: italic;
+			text-align: center;
+			max-width: 196px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 23.29px;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/quotes.png");
+				position: absolute;
+				top: -50px;
+				left: -70px;
+			}
+
+			&:after {
+				content: url("../img/club-birthday/backgrounds/quotes-sec.png");
+				position: absolute;
+				bottom: -90px;
+				left: 65px;
+			}
+
+		}
+
+		&--blog {
+			background: url("../img/club-birthday/backgrounds/begin-back.png") center no-repeat;
+			background-size: 100% 100%;
+			padding: 3px;
+			text-align: center;
+			max-width: 170px;
+			margin-top: 140px;
+			color: $white;
+		}
+
+		&--blog-header {
+			font-family: "Guerila";
+			font-size: 45px;
+			font-weight: 400;
+			transform: rotate(-8deg);
+		}
+
+		&--blog-content {
+			font-family: "GothamPro";
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 19px;
+		}
+
+		&--old-logo {
+			text-align: center;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/arrow-logo.png");
+				position: absolute;
+				left: 70px;
+				top: 130px;
+			}
+
+			&:after {
+				content: url("../img/club-birthday/backgrounds/logo-add.png");
+				position: absolute;
+				right: 70px;
+				top: 88px;
+			}
+		}
+
+		&--old-logo-one {
+			font-family: "Bahiana";
+			font-size: 60px;
+			font-weight: 400;
+			line-height: 47.72px;
+			text-transform: uppercase;
+			color: $club-birthday-know;
+			transform: rotate(10deg);
+			margin-bottom: 0;
+			margin-top: 25px;
+		}
+
+		&--old-logo-sec {
+			font-family: "Bahiana";
+			font-size: 47px;
+			font-weight: 400;
+			line-height: 40.08px;
+			text-transform: uppercase;
+			color: $club-birthday-know;
+			transform: rotate(10deg);
+			margin-left: -15px;
+		}
+
+		&--time {
+			font-family: "Guerila";
+			font-size: 37px;
+			font-weight: 400;
+			line-height: 55.91px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 110px;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/vawe-date.png");
+				position: absolute;
+				top: -8px;
+				left: 45px;
+			}
+			&:after {
+				content: url("../img/club-birthday/backgrounds/vawe-date.png");
+				position: absolute;
+				top: -8px;
+				right: 45px;
+			}
+		}
+
+		&--main-img {
+			max-width: 385px;
+		}
+
+		&--img-paragraph {
+			margin-top: 60px;
+			position: relative;
+			z-index: 2;
+			&:before {
+				content: url('../img/club-birthday/backgrounds/white-square.png');
+				position: absolute;
+				top: 8px;
+				left: 10px;
+				z-index: -1;
+			}
+		}
+
+		&--year {
+			font-family: 'lenaregular';
+			font-size: 88px;
+			font-weight: 400;
+			line-height: 132.34px;
+			text-transform: uppercase;
+			color: $white;
+			text-align: right;
+			position: relative;
+			&:after {
+				content: url("../img/club-birthday/backgrounds/dots-line.png");
+				position: absolute;
+				right: -19px;
+				top: -19px;
+			}
+		}
+
+		&--block {
+			text-align: center;
+			color: $white;
+			margin-top: 100px;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/insta-back.png");
+				position: absolute;
+				z-index: 1;
+				top: -75px;
+				left: 85px;
+			}
+		}
+
+		&--block-paragraph {
+			font-family: "Bahiana";
+			font-size: 29px;
+			font-weight: 400;
+			line-height: 27.18px;
+			text-transform: uppercase;
+			transform: rotate(5deg);
+		}
+
+		&--block-img {
+			position: relative;
+			z-index: 2;
+		}
+
+		&--block-sec {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin-top: 140px;
+			margin-left: -50px;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/insta-back-sec.png");
+				position: absolute;
+				z-index: 1;
+				bottom: -75px;
+				left: 215px;
+			}
+		}
+
+		&--block-sec-content {
+			font-family: "Bahiana";
+			font-size: 37px;
+			font-weight: 400;
+			line-height: 34.76px;
+			text-transform: uppercase;
+			color: $white;
+			transform: rotate(-5deg);
+			margin-right: 15px;
+			position: relative;
+			&:after {
+				content: url("../img/club-birthday/backgrounds/arrow-under.png");
+				position: absolute;
+				bottom: -45px;
+				left: 30px;
+			}
+		}
+
+		&--block-sec-img {
+			position: relative;
+			z-index: 2;
+		}
+
+	}
+
+	&__many-people {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/third-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1100px;
+		padding-bottom: 150px;
+		overflow: hidden;
+
+		&--blocks {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&--header {
+			font-family: "Bahiana";
+			font-size: 35px;
+			font-weight: 400;
+			line-height: 32.41px;
+			text-transform: uppercase;
+			color: $white;
+			display: flex;
+			flex-direction: column;
+			margin-top: 180px;
+			transform: rotate(-3deg);
+			text-align: center;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/1.png");
+				position: absolute;
+				top: -15px;
+				transform: rotate(3deg);
+				z-index: -1;
+				left: 95px;
+
+			}
+		}
+
+		&--header-date {
+			color: $club-date-color;
+			transform: rotate(-5deg);
+			line-height: 1.2;
+			margin-left: -140px;
+		}
+
+		&--block-insta {
+			text-align: center;
+			margin-top: 35px;
+		}
+
+		&--block-insta-content {
+			color: $white;
+			font-family: "GothamPro";
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 22px;
+			max-width: 238px;
+			margin: 30px auto;
+		}
+
+		&--second-course {
+			margin-top: 130px;
+			text-align: center;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/lightnight.png");
+				position: absolute;
+				top: -58px;
+				left: 35px;
+			}
+		}
+
+		&--second-course--time {
+			color: $club-date-color;
+			font-family: "Bahiana";
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 22.53px;
+			text-transform: uppercase;
+		}
+
+		&--second-course--header {
+			font-family: "Bahiana";
+			color: $white;
+			font-size: 53px;
+			font-weight: 400;
+			line-height: 49.09px;
+			text-transform: uppercase;
+			transform: rotate(1deg);
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/2.png");
+				position: absolute;
+				top: -58px;
+				left: 77px;
+				z-index: -1;
+			}
+		}
+
+		&--third-course {
+			margin-top: 120px;
+			text-align: center;
+			position: relative;
+
+		}
+
+		&--third-course--time {
+			color: $club-date-color;
+			font-family: "Bahiana";
+			font-size: 37px;
+			font-weight: 400;
+			line-height: 34.57px;
+			text-transform: uppercase;
+			margin-left: -170px;
+		}
+
+
+		&--third-course--header {
+			font-family: "Bahiana";
+			color: $white;
+			font-size: 49px;
+			font-weight: 400;
+			line-height: 45.59px;
+			text-transform: uppercase;
+			transform: rotate(1deg);
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/backgrounds/3.png");
+				position: absolute;
+				top: -58px;
+				left: 77px;
+				z-index: -1;
+			}
+			&:after {
+				content: url("../img/club-birthday/backgrounds/lightnight-sec.png");
+				position: absolute;
+				top: -85px;
+				right: 50px;
+				z-index: -1;
+			}
+		}
+
+
+		&--center-header {
+			margin-top: 140px;
+			margin-left: 40px;
+		}
+
+		&--center-header--head {
+			font-family: "Bahiana";
+			color: $white;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 25.85px;
+			text-transform: uppercase;
+			max-width:79px;
+		}
+
+		&--center-header--time {
+			color: $club-date-color;
+			font-family: "Bahiana";
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 22.33px;
+			text-transform: uppercase;
+		}
+
+
+		&--center-header--link {
+			&:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+		}
+
+		&--center-header--link img {
+			margin-top: -70px;
+		}
+
+		&--one-hundred {
+			margin-top: 50px;
+		}
+
+
+		&--main-bal {
+			display: flex;
+			align-items: center;
+			margin-top: 60px;
+		}
+
+		&--main-bal--time {
+			color: $club-date-color;
+			font-family: "Bahiana";
+			font-size: 50px;
+			font-weight: 400;
+			line-height: 39.35px;
+			text-transform: uppercase;
+		}
+
+		&--main-bal--header {
+			font-family: "Bahiana";
+			color: $white;
+			font-size: 59px;
+			font-weight: 400;
+			line-height: 40.42px;
+			text-transform: uppercase;
+			display: flex;
+			flex-direction: column;
+			margin-top: 55px;
+			margin-left: 15px;
+		}
+
+		&--main-bal--header-span {
+			font-size: 29px;
+		}
+
+		&--main-bal--header-link {
+			position: relative;
+			&:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+			img {
+				margin-top: -30px;
+				margin-left: -30px;
+			}
+			&:after {
+				content: url("../img/club-birthday/backgrounds/arrow-bal.png");
+				position: absolute;
+				right: -65px;
+				top: 0;
+			}
+		}
+
+		&--bal-img {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+
+		&--bal-img-one {
+			margin-top: -55px;
+			margin-left: -55px;
+		}
+
+		&--bal-img-three {
+			margin-top: -55px;
+			margin-left: 15px;
+		}
+
+
+		&--bal-block {
+			margin-left: 40px;
+		}
+
+
+
+		&--year {
+			margin-top: 130px;
+			margin-right: 40px;
+		}
+
+		&--girl-party-next {
+			display: flex;
+			flex-direction: column;
+			margin-top: 40px;
+		}
+
+
+		&--girl-party-inner {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			max-width: 260px;
+		}
+
+
+		&--girl-party-date {
+			color: $club-date-color;
+			font-family: "Bahiana";
+			font-size: 50px;
+			font-weight: 400;
+			line-height: 39.35px;
+			text-transform: uppercase;
+		}
+
+		&--girl-party-header {
+			color: $white;
+			font-family: "Bahiana";
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 25.76px;
+			text-transform: uppercase;
+			flex-direction: column;
+			margin-left: 30px;
+		}
+
+		&--girl-party-beauties {
+			margin-top: 110px;
+		}
+
+
+		&--girl-party-beauties-one {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&--girl-party-beauties-paragraph {
+			font-family: 'lenaregular';
+			font-size: 90px;
+			font-weight: 400;
+			line-height: 25.76px;
+			text-transform: uppercase;
+			color: $club-number-girls;
+			position: relative;
+			&:after {
+				content: 'красавиц';
+				position: absolute;
+				transform: rotate(90deg);
+				color: $white;
+				font-family: "Guerila";
+				right: -35px;
+				font-weight: 400;
+				font-size: 13px;
+				top: -6px;
+			}
+		}
+
+		&--girl-party-link {
+			margin-left: 35px;
+			margin-top: 20px;
+			&:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+		}
+
+
+		&--girl-party-book-link {
+			&:hover {
+				opacity: 0.8;
+				text-decoration: none;
+			}
+			img	{
+				margin-top: 40px;
+			}
+		}
+
+		&--girl-party-beauties-paragraph-sec {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			color: $white;
+			font-family: "Guerila";
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 13px;
+			margin-left: 35px;
+			margin-top: -23px;
+		}
+
+		&--girl-party-beauties-number {
+			color: $club-number-girls;
+			font-family: 'lenaregular';
+			font-size: 90px;
+			font-weight: 400;
+			line-height: 25.76px;
+			text-transform: uppercase;
+			position: relative;
+			&:before {
+				content: 'В';
+				position: absolute;
+				color: $white;
+				font-family: "Guerila";
+				font-weight: 400;
+				font-size: 17px;
+				top: -28px;
+				left: -7px;
+			}
+		}
+
+		&--girl-party-beauties-paragraph-width {
+			font-weight: 400;
+			line-height: 11px;
+			text-transform: uppercase;
+			max-width: 80px;
+		}
+
+		&--girl-party--down-content {
+			font-family: "GothamPro";
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 20px;
+			color: $white;
+			max-width: 290px;
+			margin-top: 30px;
+		}
+
+	}
+
+	&__many-people-sec {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/fourth-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1100px;
+
+		&-wrap {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		//LEFT
+		&--left {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 18%;
+		}
+
+		&--left-logo {
+			margin: 46px 0 40px;
+			align-self: start;
+		}
+
+		&-header {
+			text-transform: uppercase;
+			font-family: "Bahiana";
+			font-size: 34.77px;
+			line-height: 32.44px;
+			color: white;
+			text-align: center;
+			transform: rotate(-1deg);
+			position: relative;
+
+			&-bg-number {
+				font-family: 'lenaregular';
+				font-size: 194.43px;
+				line-height: 181.25px;
+				color: $club-birthday-numberBig;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				top: 50%;
+				left: 50%;
+				margin-top: -80px;
+				margin-left: -53px;
+				z-index: -1;
+			}
+		}
+
+		&--four {
+			margin: 40px 0;
+			min-height: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+
+			&-date {
+				font-family: "Bahiana";
+				font-size: 27.42px;
+				transform: rotate(90deg);
+				position: absolute;
+				color: $club-birthday-numberBig;
+				top: -45px;
+				right: 0;
+			}
+		}
+
+		&--five {
+			margin: 40px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&-date {
+				font-family: "Bahiana";
+				font-size: 27.42px;
+				transform: rotate(5deg);
+				position: absolute;
+				color: $club-birthday-numberBig;
+				top: -40px;
+				left: 0;
+			}
+
+			&-img {
+				margin-bottom: 20px;
+			}
+		}
+
+		&--six {
+			margin: 40px 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&-text {
+				font-family: "GothamPro-Medium";
+				font-size: 13px;
+				line-height: 19px;
+				color: white;
+				text-align: center;
+				text-decoration: underline $club-birthday-six-underline;
+			}
+
+			&-date {
+				font-family: "Bahiana";
+				font-size: 22.19px;
+				transform: rotate(-5deg);
+				position: absolute;
+				color: $club-birthday-numberBig;
+				top: 24px;
+				left: 50%;
+				margin-left: -18px;
+			}
+
+			&-img {
+				z-index: 1;
+				margin: 0 0 5px;
+			}
+		}
+		//  CENTER
+		&-center {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 100px 0;
+
+			&-events {
+				background: url("../img/club-birthday/many-people-sec/bg-center-events.png") no-repeat center;
+				min-width: 358px;
+				min-height: 262px;
+				position: relative;
+				margin: 20px 0;
+				&-date {
+					position: absolute;
+					transform: rotate(19deg);
+					font-family: "Bahiana";
+					font-size: 74.3px;
+					line-height: 69.27px;
+					color: $club-birthday-eventsDate;
+					top: -40px;
+					right: 60px;
+				}
+			}
+
+			&-diary {
+				font-family: "Guerila";
+				color: black;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+
+				&-content {
+					margin: 0 10px;
+					background: url("../img/club-birthday/many-people-sec/bg-diary.png") no-repeat center;
+					background-size: 100% 100%;
+					min-height: 147px;
+					min-width: 162px;
+					padding-top: 35px;
+				}
+
+				&-date {
+					font-size: 58px;
+					line-height: 16.33px;
+					text-align: center;
+				}
+				&-text {
+					font-size: 20px;
+					line-height: 19.33px;
+					text-align: center;
+				}
+			}
+
+			&-adds {
+				position: relative;
+				&:before {
+					position: absolute;
+					content: url("../img/club-birthday/many-people-sec/decor-adds-lightninig.png");
+					top: -40px;
+					left: 50px;
+				}
+				&:after {
+					position: absolute;
+					content: url("../img/club-birthday/many-people-sec/decor-adds-arrow.png");
+					bottom: 40px;
+					left: -55px;
+				}
+				&-text {
+					margin: 25px;
+					font-family: "Bahiana";
+					font-size: 35px;
+					line-height: 32.33px;
+					color: black;
+					text-align: center;
+				}
+			}
+		}
+
+		//  RIGHT
+		&-right {
+			display: flex;
+			flex-direction: column;
+			max-width: 17%;
+			padding-right: 30px;
+
+			background: url("../img/club-birthday/many-people-sec/border-right.png") right repeat-y;
+
+			&-year {
+				font-family: 'lenaregular';
+				color: white;
+				font-size: 88.23px;
+				line-height: 132.24px;
+				position: relative;
+				&:after {
+					position: absolute;
+					right: -34px;
+					bottom: 22px;
+					content: url("../img/club-birthday/many-people-sec/bg-time-point.png");
+				}
+			}
+
+			&-text {
+				font-family: "GothamPro-Medium";
+				color: white;
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	&__many-people-third {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/fifth-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1100px;
+		padding-bottom: 60px;
+
+		&-link:hover {
+			text-decoration: none;
+		}
+
+		&-wrap {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&--left {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 18%;
+		}
+
+		&--left-logo {
+			margin: 48px 0 30px;
+			align-self: start;
+		}
+
+		&-header {
+			text-transform: uppercase;
+			font-family: "Bahiana";
+			font-size: 34.77px;
+			line-height: 32.44px;
+			color: white;
+			text-align: center;
+			transform: rotate(-1deg);
+			position: relative;
+
+			&-bg-number {
+				font-family: 'lenaregular';
+				font-size: 194.43px;
+				line-height: 181.25px;
+				color: $club-birthday-third-numberBig;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -80px;
+				margin-left: -53px;
+				z-index: -1;
+			}
+		}
+
+		&--seven {
+			margin: 80px 0 30px;
+			min-height: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+
+			&-date {
+				font-family: "Bahiana";
+				font-size: 25.03px;
+				position: absolute;
+				color: $club-birthday-third-numberBig;
+				top: -30px;
+				left: 20px;
+			}
+
+			&-video {
+				z-index: 1;
+			}
+		}
+
+		&--left-lists {
+			list-style: none;
+			margin-top: 20px;
+		}
+
+		&--left-list {
+			font-family: "GothamPro-Medium";
+			font-size: 12px;
+			line-height: 20px;
+			color: white;
+			margin: 15px 0;
+			position: relative;
+			&:before {
+				content: url("../img/club-birthday/many-people-third/left-list-marker.png");
+				position: absolute;
+				top: 0px;
+				left: -30px;
+			}
+		}
+		//RIGHT
+		&-right {
+			max-width: 82%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+			flex-grow: 1;
+			&-year {
+				align-self: start;
+				padding-right: 16px;
+				min-width: 100%;
+				font-family: 'lenaregular';
+				font-size: 88.23px;
+				line-height: 132.24px;
+				color: white;
+				text-align: right;
+				background: url("../img/club-birthday/many-people-third/decor-year-border.png") no-repeat right top;
+				position: relative;
+				&:after {
+					position: absolute;
+					right: -4px;
+					bottom: 22px;
+					content: url("../img/club-birthday/many-people-sec/bg-time-point.png");
+				}
+			}
+		}
+
+		&-love-gone {
+			display: flex;
+			margin-left: 17%;
+
+			&-content {
+				color: white;
+				text-transform: uppercase;
+				transform: rotate(3deg);
+				max-width: 225px;
+				font-family: "Guerila";
+			}
+
+			&-header {
+				font-size: 11.9px;
+				line-height: 21.31px;
+				margin-bottom: 0;
+			}
+
+			&-text {
+				font-size: 21.31px;
+				line-height: 21.31px;
+				position: relative;
+				&:after {
+					transform: rotate(-30deg);
+					position: absolute;
+					bottom: -45px;
+					left: 20px;
+					content: url("../img/club-birthday/many-people-third/decor-arrow.png");
+				}
+			}
+		}
+
+		&-book {
+			display: flex;
+			&-img {
+				margin-bottom: 40px;
+			}
+
+			&-text {
+				align-self: flex-end;
+				margin: 10px 10px 10px 20px;
+				font-family: "Guerila";
+				font-size: 24.92px;
+				line-height: 24.92px;
+				color: white;
+				text-transform: uppercase;
+				max-width: 185px;
+				position: relative;
+				&:after {
+					position: absolute;
+					bottom: -10px;
+					left: -65px;
+					content: url("../img/club-birthday/many-people-third/decor-arrow.png");
+				}
+			}
+		}
+
+		&-subscribers {
+			min-width: 100%;
+			margin: 20px;
+			padding: 0 40px;
+		}
+
+		&-cover {
+			display: flex;
+
+			&-text-first {
+				margin: 0;
+				max-width: 120px;
+				font-family: "Bahiana";
+				color: white;
+				font-size: 53.49px;
+				line-height: 35px;
+				transform: rotate(-10deg);
+			}
+			&-text-second {
+				font-size: 37.49px;
+				line-height: 35px;
+				position: relative;
+				&:after {
+					transform: rotate(10deg);
+					position: absolute;
+					bottom: -150px;
+					left: 10px;
+					content: url("../img/club-birthday/many-people-third/decor-cover-arrow.png");
+				}
+			}
+		}
+
+		&-plans {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&:before {
+				position: absolute;
+				//content: url("../img/club-birthday/many-people-third/plans.png");
+				top: 0;
+				left: 0;
+			}
+
+			&-head {
+				max-width: 200px;
+				font-family: "Guerila";
+				color: white;
+				text-transform: uppercase;
+				text-align: center;
+				transform: rotate(10deg);
+				position: relative;
+				&:after {
+					content: url("../img/club-birthday/many-people-third/bg-plans-head.png");
+					position: absolute;
+					bottom: 50%;
+					margin-bottom: -205px;
+					left: 50%;
+					margin-left: -180px;
+					z-index: -1;
+
+				}
+
+				&--line1 {
+					font-size: 34.19px;
+					line-height: 34.19px;
+				}
+				&--line2 {
+					font-size: 78.21px;
+					line-height: 60.27px;
+				}
+				&--line3 {
+					font-size: 49.4px;
+					line-height: 41.05px;
+				}
+				&--line4 {
+					font-size: 23.33px;
+					line-height: 24.59px;
+				}
+			}
+
+			&-btn {
+				padding: 15px 20px;
+				transform: rotate(-3deg);
+				font-family: "Bahiana";
+				font-size: 32px;
+				line-height: 33.1px;
+				background: $club-birthday-third-btn-bg;
+				box-shadow: 0px 6px 0px #ff9933;
+				border-radius: 15px;
+				border: none;
+				cursor: pointer;
+				color: $club-birthday-third-btn-text;
+				margin: 20px 0;
+				&:hover {
+					background: #ff9933;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			&-text {
+				text-align: center;
+				max-width: 140px;
+				font-family: " GothamPro ";
+				font-size: 11px;
+				line-height: 15px;
+				color: white;
+			}
+		}
+
+		&-modal {
+			position: relative;
+			background: white;
+			margin-top: 70px;
+
+			&-wrap {
+				background: rgba(255, 255, 255, 0.85);
+			}
+
+			&-box {
+				width: 417px;
+			}
+
+			&-btn-close {
+				cursor: pointer;
+				border: none;
+				position: absolute;
+				width: 16px;
+				height: 16px;
+				top: -20px;
+				right: -22px;
+				background: url("../img/club-birthday/many-people-third/modal-btn-close.png");
+				&:focus {
+					outline: none;
+				}
+			}
+
+			&-email {
+				flex-basis: 100%;
+				margin: 5px;
+				background: $club-birthday-third-modal-bg-inp;
+				border: 2px solid rgba(204, 204, 204, 0.19);
+				border-radius: 2px;
+				height: 50px;
+				padding-left: 20px;
+				font-family: "GothamPro";
+				font-size: 14px;
+				color: black;
+				&--card-number {
+					min-width: 200px;
+					flex-basis: 64%;
+				}
+				&--card-date {
+					min-width: 90px;
+					flex-basis: 30%;
+				}
+
+			}
+
+			&-form {
+				display: flex;
+				flex-wrap: wrap;
+				padding: 30px;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+			}
+
+			&-text {
+				width: 100%;
+				font-family: "GothamPro";
+				font-size: 15px;
+				color: black;
+				margin: 20px 5px 5px;
+				padding-left: 20px;
+				color: black;
+			}
+
+			&-submit {
+				display: block;
+				margin: 20px auto 0;
+
+				background: $club-birthday-third-modal-bg-submit;
+				border: 0;
+				border-radius: 2px;
+				min-height: 49px;
+				font-family: "GothamPro-Bold";
+				font-size: 10.44px;
+				color: white;
+				text-transform: uppercase;
+				padding: 0 62px;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+
+	&__special-articles {
+		width: 100%;
+		background: url("../img/club-birthday/backgrounds/sixth-screen.png") center no-repeat;
+		background-size: cover;
+		min-height: 1105px;
+		padding-top: 100px;
+
+		&-head {
+			text-align: center;
+			text-transform: uppercase;
+			&-line1 {
+				font-family: "Bahiana";
+				font-size: 53.44px;
+				line-height: 35px;
+				color: $club-birthday-articles-head;
+				transform: rotate(-3deg);
+			}
+			&-line2 {
+				font-family: "Bahiana";
+				font-size: 26.15px;
+				line-height: 30px;
+				color: white;
+				transform: rotate(3deg);
+			}
+			&-line3 {
+				font-family: "Guerila";
+				font-size: 60px;
+				line-height: 30px;
+				color: $club-birthday-articles-head;
+			}
+		}
+
+		&-main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 60px;
+			background: url("../img/club-birthday/special-articles/bg--center-main.png") no-repeat center;
+
+			&-article {
+				display: flex;
+				align-items: center;
+				min-width: 40%;
+				z-index: 100;
+				position: relative;
+				margin: 10px 0;
+
+				&-img{
+					z-index: 100;
+				}
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				&--justifyEnd {
+					justify-content: flex-end;
+				}
+
+				&--top-like {
+					margin-left: 150px;
+					z-index: 10;
+					&:before {
+						position: absolute;
+						left: -270px;
+						z-index: 0;
+						bottom: 50%;
+						margin-bottom: -180px;
+						content: "";
+						width: 345px;
+						height: 344px;
+						background: url("../img/club-birthday/special-articles/top-Like.png") center no-repeat;
+						background-size: 80%;
+					}
+				}
+
+				&--top-comment {
+					margin-left: 150px;
+					z-index: 10;
+					&:before {
+						position: absolute;
+						left: -160px;
+						z-index: 0;
+						bottom: 50%;
+						margin-bottom: -177px;
+						content: "";
+						width: 345px;
+						height: 344px;
+						background: url("../img/club-birthday/special-articles/top-comment.png") center no-repeat;
+						background-size: 60%;
+					}
+				}
+
+				&-likes {
+					font-family: "Bahiana";
+					font-size: 50px;
+					line-height: 26.95px;
+					color: white;
+					&:before {
+						content: url("../img/club-birthday/special-articles/decor-article-heart.png");
+						margin: 0 15px;
+					}
+				}
+
+				&-comment {
+					font-family: "Bahiana";
+					font-size: 50px;
+					line-height: 26.95px;
+					color: white;
+					&:before {
+						content: url("../img/club-birthday/special-articles/decor-article-comment.png");
+						margin: 0 15px;
+					}
+				}
+			}
+		}
+		&-foot {
+			text-align: center;
+			&-bonus {
+				margin: 10px;
+				width: 100%;
+				font-family: 'lenaregular';
+				font-size: 15.39px;
+				line-height: 20.36px;
+				color: white;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			&-btn1 {
+				font-family: "Bahiana";
+				font-size: 30.55px;
+				text-transform: uppercase;
+				color: white;
+				border: none;
+				background: #cc33ff;
+				border-radius: 10px;
+				box-shadow: 0 7px 0 #cc33cc;
+				padding: 5px 30px;
+				box-sizing: border-box;
+				cursor: pointer;
+				&:hover {
+					background: #cc33cc;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+			&-btn2 {
+				margin: 2px 4px 5px;
+				font-family: "Bahiana";
+				font-size: 37.36px;
+				text-transform: uppercase;
+				color: white;
+				background: #9933ff;
+				border-radius: 10px;
+				box-shadow: 0 7px 0 #9933cc;
+				padding: 10px 43px;
+				border: none;
+				box-sizing: border-box;
+				cursor: pointer;
+				&:hover {
+					background: #9933cc;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+	}
+}

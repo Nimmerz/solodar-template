@@ -1,0 +1,73 @@
+@import "vars";
+
+
+.change-back {
+	background-image: url("../img/meet-page/backup.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #f7f5f7;
+	min-height: 880px;
+}
+
+.meet-page {
+	background: $white;
+	box-shadow: 0 2px 2px #eedee8;
+	padding: 20px;
+
+	&__block {
+		background: $white;
+	}
+
+	&__back-img {
+		background: url("../img/meet-page/meetup.png") center no-repeat;
+		background-size: 100% 100%;
+		margin-top: 0;
+		padding: 0;
+	}
+
+	&__footer {
+		margin-top: 20px;
+		position: relative;
+		background: url("../img/meet-page/footer-back.png") center no-repeat;
+		background-size: 100% 100%;
+		min-height: 140px;
+		display: flex;
+		justify-content: space-around;
+		&--image {
+			position: absolute;
+			bottom: -96px;
+			left: 5px;
+		}
+		&--content {
+			color: #9a4ad3;
+			font-family: "GothamPro";
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 17.56px;
+		}
+		&--header {
+			color: #eb4377;
+			font-family: "GothamPro";
+			font-size: 29px;
+			font-weight: 300;
+			line-height: 33.3px;
+			position: relative;
+			&:before {
+				position: absolute;
+				content: url("../img/meet-page/branch-left.png");
+				left: -25px;
+			}
+			&:after {
+				position: absolute;
+				content: url("../img/meet-page/branch-right.png");
+				right: -25px;
+			}
+		}
+		&--button {
+			background-color: #57c626;
+			box-shadow: 0 2px 2px #489c22;
+			border-radius: 3px;
+			padding: 10px 35px !important;
+		}
+	}
+}

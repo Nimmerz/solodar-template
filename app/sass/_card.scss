@@ -1,0 +1,134 @@
+@import "vars";
+
+.clients__row {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	padding-left: 0;
+	margin: 15px 0 25px 15px;
+	font-family: 'wesregular';
+	&--link {
+		color: #938b98;
+		text-transform: uppercase;
+		margin-right: 65px;
+		padding: 10px;
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-size: contain;
+			background-position-x: 4px;
+			color: $white;
+		}
+		&:active {
+			text-decoration: none;
+			opacity: 0.8;
+			color: $white;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-position-x: 4px;
+		}
+		&:focus {
+			color: $white;
+			text-decoration: none;
+			opacity: 0.8;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-position-x: 4px;
+		}
+	}
+	&--link-sec {
+		color: #938b98;
+		text-transform: uppercase;
+		margin-right: 65px;
+		padding: 10px;
+		&:hover {
+			text-decoration: none;
+			opacity: 0.8;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-size: 340px 40px;
+			color: $white;
+		}
+		&:active {
+			text-decoration: none;
+			opacity: 0.8;
+			color: $white;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-size: 340px 40px;
+		}
+		&:focus {
+			color: $white;
+			text-decoration: none;
+			opacity: 0.8;
+			background: url('../img/cards/active-tab.png') center no-repeat;
+			background-size: 340px 40px;
+		}
+	}
+	&--icon {
+		margin-right: 15px;
+		color: $rose-icons;
+	}
+	.fa-star {
+		font-size: 22px;
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.position-card {
+	position: absolute;
+	top: 18px;
+	left: -3px;
+	&:after {
+		top: -5px;
+		background: $white;
+	}
+}
+
+.overflow-cards {
+	overflow: hidden;
+	min-height: 450px;
+}
+
+.content-margin {
+	margin-left: 20px;
+	padding-bottom: 30px;
+	margin-top: 40px;
+	position: relative;
+	&:before {
+		content: url("../img/cards/up-line.png");
+		position: absolute;
+		top: -13px;
+		left: -10px;
+	}
+	&:after {
+		content: url("../img/cards/down-line.png");
+		position: absolute;
+		bottom: -18px;
+		left: -4px;
+	}
+}
+
+.margin-left {
+	margin-left: 0;
+}
+
+.button-size-card {
+	max-height: 50px;
+	margin: 100px 15px 0 20px;
+	padding: 10px 0;
+	min-width: 143px;
+}
+
+.line-before {
+	position: relative;
+	&:before {
+		content: '';
+		border-left: 2px solid #e6d5ec;
+		height: 16px;
+		position: absolute;
+		z-index: 2;
+		top: 5px;
+		left: -32px;
+	}
+}

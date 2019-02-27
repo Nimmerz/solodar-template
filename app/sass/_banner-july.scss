@@ -1,0 +1,317 @@
+@import "vars";
+
+.banner-july {
+	min-height: 806px;
+	background: url("../img/banner-july/bg-main.png") center no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+
+	color: white;
+	text-transform: uppercase;
+	font-family: "Wes";
+
+	&__main {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		//align-items: center;
+		padding-top: 150px;
+
+	}
+
+	&__h-main {
+		font-size: 45px;
+		line-height: 70px;
+		letter-spacing: 4px;
+	}
+
+	&__p-main {
+		font-size: 44px;
+		line-height: 35px;
+		letter-spacing: 2px;
+		text-transform: none;
+	}
+
+	&__sidebar-left {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&__apps {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+
+		&-text {
+			font-family: "GothamPro";
+			font-size: 11px;
+			line-height: 14px;
+			text-transform: none;
+			margin-top: 15px;
+		}
+	}
+
+	&__btn {
+		margin-top: 30px;
+		border-radius: 4px;
+		border: none;
+		font-family: "GothamPro";
+		font-size: 12px;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 10px 19px;
+		&:before {
+			content: url("../img/banner-july/btn-img.png");
+			margin-right: 10px;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&__a-more {
+		margin-top: 17px;
+		display: inline-block;
+		color: white;
+		border-bottom: 1px dashed #660099;
+		font-family: "GothamPro";
+		font-size: 12px;
+		text-transform: none;
+		padding: 0 5px;
+		&:before {
+			content: url("../img/banner-july/a-more-arrow.png");
+			margin-right: 10px;
+		}
+	}
+
+	&__course {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: space-around;
+		text-align: right;
+		position: relative;
+		padding-right: 0;
+		margin-bottom: 20px;
+
+		&-price {
+			position: absolute;
+			top: 75px;
+			left: -10px;
+		}
+
+		&-open {
+			font-size: 19.2px;
+			line-height: 25px;
+			letter-spacing: 4px;
+		}
+
+		&-close {
+			font-size: 15px;
+			line-height: 25px;
+			letter-spacing: 2px;
+			margin-bottom: 30px;
+		}
+
+		&-footer {
+			text-align: right;
+		}
+	}
+
+	&__offer {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		position: relative;
+		margin-bottom: 20px;
+
+		&-price {
+			position: absolute;
+			top: 15px;
+		}
+
+		&-price-wrap {
+			min-height: 382px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			width: 100%;
+			position: relative;
+			&:before {
+				position: absolute;
+				left: 50%;
+				margin-left: -48px;
+				top: 35px;
+				content: url("../img/banner-july/decor-offer-price-up.png");
+			}
+			&:after {
+				position: absolute;
+				left: 50%;
+				margin-left: -48px;
+				bottom: 35px;
+				content: url("../img/banner-july/decor-offer-price-dn.png");
+			}
+		}
+
+		&-p-actual {
+			font-family: "Verdana";
+			font-size: 10px;
+			line-height: 13px;
+			text-align: center;
+			text-transform: none;
+		}
+
+		&-footer {
+			text-align: center;
+		}
+
+
+	}
+
+	&__intensive {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-around;
+		padding-left: 0;
+		position: relative;
+		margin-bottom: 20px;
+
+		&-price {
+			position: absolute;
+			top: 10px;
+			right: -35px;
+		}
+
+		&-date {
+			font-size: 30.39px;
+			line-height: 35px;
+			letter-spacing: 4px;
+		}
+
+		&-head {
+			margin: 13px 0 30px;
+			font-size: 15px;
+			line-height: 25px;
+			letter-spacing: 2px;
+		}
+	}
+}
+
+.banner-july__btn-one {
+	padding:  12px 8px;
+	border-radius: 4px;
+	background: #cc33ff;
+	white-space: nowrap;
+	color: white;
+	&:hover {
+		color: white;
+		text-decoration: none;
+		opacity: 0.8;
+	}
+}
+
+.banner-july__btn-two {
+	padding:  12px 8px;
+	border-radius: 4px;
+	margin-top: 4px;
+	background: white;
+	white-space: nowrap;
+	color: #ff3366;
+	&:before {
+		content: url("../img/banner-july/btn-img-purpure.png");
+		margin-right: 10px;
+	}
+	&:hover {
+		color:  #ff3366;
+		text-decoration: none;
+		opacity: 0.8;
+	}
+}
+
+.banner-july__btn-three {
+	padding:  12px 8px;
+	border-radius: 4px;
+	background: #ff6699;
+	color: white;
+	white-space: nowrap;
+	&:hover {
+		color: white;
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+}
+
+@media (max-width: 1199px) {
+	.banner-july__h-main {
+		font-size: 50px;
+		line-height: 60px;
+		letter-spacing: 2px;
+	}
+	.banner-july__course-price {
+		left: -35px;
+	}
+	.banner-july__intensive-price {
+		top: -70px;
+		right: -70px;
+	}
+}
+
+@media (max-width: 991px) {
+	.banner-july__sidebar-left {
+		display: none;
+	}
+	.banner-july__sidebar-right {
+		display: none;
+	}
+	.banner-july__course-price {
+		position: static;
+	}
+	.banner-july__intensive-price {
+		position: static;
+	}
+
+	.banner-july__h-main {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 767px) {
+	.banner-july {
+		&__offer {
+			order: 3;
+		}
+
+		&__course {
+			align-items: center;
+			text-align: center;
+			&-footer {
+				text-align: center;
+			}
+		}
+		&__intensive {
+			align-items: center;
+			text-align: center;
+		}
+
+		.banner-july__btn-one,
+		.banner-july__btn-two,
+		.banner-july__btn-three
+		{
+			margin: 5px;
+		}
+	}
+}
+

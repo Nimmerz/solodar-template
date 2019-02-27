@@ -1,0 +1,240 @@
+@import "vars";
+
+.banner__first {
+	min-height: 806px;
+	background: url("../img/banner-one/banner-back.jpg") center no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	&--absolute {
+		background: url("../img/banner-one/absolute-back.png") center no-repeat;
+		background-size: 100% 100%;
+		display: flex;
+		padding: 35px 15px;
+		text-align: center;
+		flex-direction: column;
+		max-width: 96px;
+		position: absolute;
+		top: 140px;
+	}
+	&--absolute-first-content,	&--absolute-second-content, &--absolute-third-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $white;
+		font-family: 'AABebasNeue';
+	}
+
+
+	&--absolute-first-content {
+		font-size: 100px;
+		font-weight: 400;
+		line-height: 53.9px;
+	}
+
+	&--absolute-first-span {
+		font-weight: 400;
+		font-style: italic;
+		font-size: 11px;
+		letter-spacing: 3.34px;
+		line-height: 13.19px;
+		max-width: 80px;
+		margin-top: 10px;
+		word-wrap: break-word;
+	}
+
+	&--main {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+
+	&--first-half {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		padding-right: 40px;
+		position: relative;
+		&:before {
+			content: url("../img/banner-one/price-logo.png");
+			position: absolute;
+			left: 110px;
+			top: 40px;
+		}
+	}
+
+	&--second-half {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 40px;
+	}
+
+	&--date-paragraph {
+		color: $white;
+		font-family: 'AABebasNeue';
+		font-size: 30px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 38.05px;
+		text-transform: uppercase;
+		letter-spacing: 1.67px;
+		margin-top: 105px;
+	}
+
+	&--date-paragraph-sec {
+		color: $white;
+		font-family: 'AABebasNeue';
+		font-size: 30px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 38.05px;
+		text-transform: uppercase;
+		letter-spacing: 1.67px;
+		margin-top: 105px;
+	}
+
+	&--online-paragraph {
+		margin-top: 0px;
+	}
+
+	&--online-header {
+		text-align: right;
+		font-family: 'AABebasNeue';
+		font-weight: 400;
+		font-size: 80px;
+		max-width: 360px;
+		line-height: 95px;
+		word-wrap: break-word;
+		margin-top: 20px;
+		position: relative;
+		&:after	 {
+			position: absolute;
+			content: url("../img/banner-one/take-part-arrow.png");
+			right: -35px;
+			bottom: -90px;
+		}
+	}
+
+	&--online-header-sec {
+		text-align: left;
+		font-family: 'AABebasNeue';
+		font-weight: 400;
+		font-size: 80px;
+		max-width: 360px;
+		line-height: 95px;
+		word-wrap: break-word;
+		margin-top: 0;
+		position: relative;
+		&:after	 {
+			position: absolute;
+			content: url("../img/banner-one/take-part-arrow-sec.png");
+			left: -35px;
+			bottom: -90px;
+		}
+	}
+
+	&--button-take-part {
+		box-shadow: 0 0 16px rgba(255, 160, 31, 0.32);
+		background-color: #7635d8;
+		background-image: linear-gradient(to left, #ff2d63 0%, #fc881d 100%);
+		margin-top: 59px;
+	}
+
+
+	&--days-link {
+		color: $white;
+		font-family: 'AABebasNeue';
+		font-size: 11px;
+		font-weight: 400;
+		line-height: 28.6px;
+		text-transform: uppercase;
+		letter-spacing: 3.34px;
+		border-bottom: 1px dashed #fa8731;
+		text-align: center;
+		margin-top: 15px;
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			opacity: 0.8;
+		}
+		&:active {
+			color: $white;
+			text-decoration: none;
+			opacity: 0.8;
+		}
+	}
+
+	&--days-img {
+		margin-right: 10px;
+	}
+
+	&--absolute-content-third {
+		font-family: 'AABebasNeue';
+		font-size: 11px;
+		font-weight: 400;
+		font-style: italic;
+		line-height: 20px;
+		text-transform: uppercase;
+		letter-spacing: 1.6px;
+		color: $white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&--absolute-content-third-span {
+		font-size: 23px;
+		letter-spacing: 3.34px;
+	}
+
+	&--absolute-content-third-sec {
+		font-size: 150px;
+		font-family: 'AABebasNeue';
+		font-weight: 400;
+		font-style: italic;
+		margin-top: 30px;
+		letter-spacing: 40px;
+	}
+
+
+	&--absolute-content-third-span-sec {
+		letter-spacing: 5.46px;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+	&--absolute-third {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+		top: 290px;
+		&:before {
+			content: url(../img/banner-one/line-begin-left.png);
+			left: -50px;
+			position: absolute;
+			top: 73px;
+		}
+		&:after {
+			content: url("../img/banner-one/line-begin-right.png");
+			right: -50px;
+			position: absolute;
+			bottom: 60px;
+		}
+	}
+
+	&--absolute-sec {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		right: 74px;
+		top: 34px;
+	}
+
+	&--absolute-sec-margin {
+		margin-top: -45px;
+		max-width: 100px;
+	}
+
+}

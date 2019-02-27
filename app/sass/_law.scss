@@ -1,0 +1,543 @@
+$law-text: #333;
+$law-borders: #ccc;
+$law-modal-bg-inp: #f9f9f9;
+$law-modal-bg-submit: #6633cc;
+$law-modal-bg-download: #ededed;
+
+.law {
+  background: white;
+  padding: 0 40px;
+}
+
+
+
+.law_content {
+  padding-top: 60px;
+  margin-top: 0;
+}
+
+
+.law-inform__text {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: -128px;
+  right: -50px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+.law-inform__text-one {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 80px;
+  left: 15px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+.law-inform__text-sec {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 80px;
+  left: 280px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+.law-inform__text-third {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 80px;
+  left: 550px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+.law-inform__text-fourth {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 80px;
+  left: 815px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+.law-inform__text-fifth {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 130px;
+  left: 115px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+
+.law-inform__text-sixth {
+  display: none;
+  position: absolute;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17), 0 8px 10px rgba(0, 0, 0, 0.06);
+  background: white;
+  padding: 25px;
+  width: 212px;
+  min-height: 175px;
+  top: 240px;
+  left: 80px;
+  z-index: 99;
+  font-family: "GothamPro";
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 103px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ffff;
+  }
+}
+
+
+.law-inform {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+    &:hover {
+      opacity: 0.8;
+    }
+    &:hover + .law-inform__text {
+      display: block;
+    }
+  }
+
+.law-inform__one {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-one {
+    display: block;
+  }
+}
+
+.law-inform__sec {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-sec {
+    display: block;
+  }
+}
+
+.law-inform__third {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-third {
+    display: block;
+  }
+}
+
+.law-inform__fourth {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-fourth {
+    display: block;
+  }
+}
+
+.law-inform__fifth {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-fifth {
+    display: block;
+  }
+}
+
+.law-inform__sixth {
+  margin-left: 10px;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: url("../img/law/bg-inform.png") no-repeat center;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:hover + .law-inform__text-sixth {
+    display: block;
+  }
+}
+
+.law-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0 13px;
+
+  &__right-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    font-family: "GothamPro";
+    font-size: 24px;
+    color: black;
+  }
+
+  &__btn-deal {
+    font-family: "GothamPro-Bold";
+    font-size: 10.45px;
+    color: $law-text;
+    text-transform: uppercase;
+    border: 3px solid $law-borders;
+    border-radius: 3px;
+    background: white;
+    min-height: 51px;
+    padding: 0px 20px;
+    cursor: pointer;
+    &:hover {
+      background: $law-borders;
+      opacity: 0.8;
+    }
+  }
+}
+
+.law-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.law-product {
+  flex-basis: 20%;
+  margin: 13px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+
+  &__head {
+    background-size: cover;
+    min-height: 139px;
+    min-width: 256px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+
+    &-text {
+      font-family: "GothamPro-Bold";
+      font-size: 16px;
+      color: black;
+    }
+
+    &--course {
+      background: url("../img/law/bg-produc-course.jpg") no-repeat center;
+    }
+    &--book {
+      background: url("../img/law/bg-produc-book.jpg") no-repeat center;
+    }
+    &--intensive {
+      background: url("../img/law/bg-produc-intensive.jpg") no-repeat center;
+    }
+    &--club {
+      background: url("../img/law/bg-produc-club.jpg") no-repeat center;
+    }
+  }
+
+  &-lists {
+    list-style: none;
+    padding: 0px 27px;
+  }
+
+  &-list {
+    border-bottom: 1px solid $law-borders;
+    padding: 10px 0;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-list-a {
+    text-transform: uppercase;
+    font-family: "GothamPro-Medium";
+    font-size: 10px;
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+.law-modal {
+  position: relative;
+  background: white;
+
+  &-wrap {
+    background: rgba(255, 255, 255, 0.85);
+  }
+
+  &-box {
+    width: 417px;
+  }
+
+  &__btn-close {
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -20px;
+    right: -22px;
+    background: url("../img/law/modal-btn-close.png");
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.17);
+
+    &-head {
+      font-family: "GothamPro";
+      font-size: 24px;
+      color: black;
+      text-align: center;
+    }
+
+    &-download {
+      margin: 5px;
+      border-radius: 2px;
+      padding: 11px 23px;
+      vertical-align: center;
+      cursor: pointer;
+      background: $law-modal-bg-download;
+
+      &-input {
+        display: none;
+      }
+      &-text{
+        font-family: "GothamPro-Medium";
+        font-size: 10.44px;
+        color: black;
+        text-transform: uppercase;
+        vertical-align: center;
+        &:before{
+          content: url("../img/law/clip.png");
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+    }
+
+    &-inp {
+      flex-basis: 100%;
+      margin: 5px;
+      background: $law-modal-bg-inp;
+      border: 2px solid rgba(204, 204, 204, 0.19);
+      border-radius: 2px;
+      height: 50px;
+      padding-left: 20px;
+      font-family: "GothamPro";
+      font-size: 14px;
+      color: black;
+      &--card-number {
+        min-width: 200px;
+        flex-basis: 64%;
+      }
+      &--card-date {
+        min-width: 90px;
+        flex-basis: 30%;
+      }
+    }
+
+    &-text {
+      width: 100%;
+      font-family: "GothamPro";
+      font-size: 14px;
+      color: black;
+      margin: 20px 5px 5px;
+      padding-left: 20px;
+      color: black;
+    }
+
+    &-submit {
+      display: block;
+      margin: 20px auto 0;
+
+      background: $law-modal-bg-submit;
+      border: 0;
+      border-radius: 2px;
+      min-height: 49px;
+      font-family: "GothamPro-Bold";
+      font-size: 10.44px;
+      color: white;
+      text-transform: uppercase;
+      padding: 0 62px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

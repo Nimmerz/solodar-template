@@ -1,0 +1,713 @@
+.shopfront-content-bg {
+  background: url("../img/shopfront/bg.jpg") no-repeat center !important;
+  background-size: cover !important;
+  min-height: 2170px;
+}
+
+.shopfront {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 37px 0 0;
+  &--color-rose {
+    color: #d92772;
+  }
+}
+
+.shopfront-btn {
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 17px 27px;
+  min-width: 185px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "GothamPro-Bold";
+  font-size: 10px;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: none;
+    color: white;
+  }
+  &:focus {
+    color: white;
+    text-decoration: none;
+  }
+  &--arrow-right:before {
+    content: url("../img/shopfront/btn-arrow-right.png");
+    margin-right: 15px;
+  }
+}
+
+.shopfront-box {
+  min-width: 200px;
+  flex-basis: 45%;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopfront-item {
+  //margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  flex-grow: 1;
+  display: block;
+  &:visited, &:focus {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  &--half {
+    flex-basis: 48%;
+    min-width: 350px;
+  }
+  &--half-small {
+    flex-basis: 48%;
+    min-width: 250px;
+  }
+  &--quarter {
+    flex-basis: 23%;
+    min-width: 250px;
+  }
+  &__full-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.shopfront-stage {
+  color: white;
+  padding: 20px 20px 20px 37px;
+  width: 100%;
+  min-height: 280px;
+  height: 100%;
+
+  &--first {
+    background: url("../img/shopfront/stage/bg-step1.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+  &--second {
+    background: url("../img/shopfront/stage/bg-step2.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  &__head {
+    text-align: right;
+  }
+  &__time-left {
+    font-family: "GothamPro-Bold";
+    font-size: 13px;
+    text-transform: uppercase;
+
+    padding: 0 7px;
+    display: inline-block;
+    margin-bottom: 20px;
+    &--bg-first {
+      background: #f2518f;
+    }
+    &--bg-second {
+      background: #bd44b3;
+    }
+  }
+  &__stage {
+    font-family: "GothamPro-Medium";
+    font-size: 14px;
+    color: #fcbad8;
+    margin-bottom: 5px;
+  }
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  &__advantages {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "GothamPro-Medium";
+    font-size: 11px;
+    line-height: 13.92px;
+    text-transform: uppercase;
+  }
+  &__advantage {
+    margin: 0 38px 5px 0;
+    &--place:before {
+      content: url("../img/shopfront/stage/adventage-place.png");
+      position: relative;
+      margin-right: 9px;
+      top: 5px;
+    }
+    &--device:before {
+      content: url("../img/shopfront/stage/adventage-device.png");
+      position: relative;
+      margin-right: 12px;
+      top: 5px;
+    }
+    &--time:before {
+      content: url("../img/shopfront/stage/adventage-time.png");
+      position: relative;
+      margin-right: 12px;
+      top: 5px;
+    }
+    &--cards:before {
+      content: url("../img/shopfront/stage/adventage-cards.png");
+      position: relative;
+      margin-right: 12px;
+      top: 5px;
+    }
+  }
+}
+
+.shopfront-who-is {
+  color: white;
+  min-height: 280px;
+  max-height: 280px;
+  height: 100%;
+  padding: 38px;
+  background-image: linear-gradient(45deg, #310019, #14101f, #051821);
+  &__text-videos {
+    font-family: " GothamPro-Bold ";
+    font-size: 13px;
+    text-transform: uppercase;
+    &:before {
+      margin-right: 20px;
+      content: url("../img/shopfront/who-is/decor-play.png");
+      position: relative;
+      top: 11px;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-family: "GothamPro-Bold";
+    font-size: 40px;
+  }
+}
+
+.shopfront-manipulation {
+  min-height: 570px;
+  background: url("../img/shopfront/manipulation/bg.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 20px 16px 20px 38px;
+  position: relative;
+  &:after {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    content: url("../img/shopfront/manipulation/decor-arrow-right.png");
+  }
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 36px;
+    line-height: 40px;
+    margin-top: 50px;
+  }
+  &__advantages {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 55px;
+  }
+  &__advantage {
+    margin: 0 0 33px 0;
+    min-width: 200px;
+    flex-basis: 40%;
+    flex-grow: 1;
+    position: relative;
+    padding: 0 30px 0;
+    text-transform: uppercase;
+    font-family: "GothamPro-Medium";
+    font-size: 11px;
+    line-height: 16px;
+    &--lecture:before {
+      content: url("../img/shopfront/manipulation/advantage-lecture.png");
+      position: absolute;
+      top: -2px;
+      left: 0px;
+    }
+    &--answer:before {
+      content: url("../img/shopfront/manipulation/advantage-answer.png");
+      position: absolute;
+      top: -2px;
+      left: 0px;
+    }
+    &--days:before {
+      content: url("../img/shopfront/manipulation/advantage-days.png");
+      position: absolute;
+      top: -2px;
+      left: 0px;
+    }
+    &--place:before {
+      content: url("../img/shopfront/manipulation/advantage-place.png");
+      position: absolute;
+      top: -2px;
+      left: 0px;
+    }
+  }
+}
+
+.shopfront-club {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  background: url("../img/shopfront/club/bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 280px;
+  padding: 40px;
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+  }
+  &__text {
+    font-family: "GothamPro";
+    font-size: 13px;
+    width: 100%;
+  }
+  &:after {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    content: url("../img/shopfront/manipulation/decor-arrow-right.png");
+  }
+}
+
+.shopfront-forum {
+  color: white;
+  background: #402a5a;
+  padding: 40px 30px 40px 40px;
+  min-height: 280px;
+  position: relative;
+  &::before {
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    margin-left: -115px;
+    content: url("../img/shopfront/forum/girls.png");
+  }
+  &:after {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    content: url("../img/shopfront/manipulation/decor-arrow-right.png");
+  }
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.shopfront-mobile {
+  background: url("../img/shopfront/mobile/bg.png") no-repeat center;
+  background-size: 100% 100%;
+  color: white;
+  width: 270px;
+  max-width: 270px;
+  min-height: 570px;
+  max-height: 570px;
+  padding: 70px 50px 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__head-text {
+    text-transform: uppercase;
+    font-family: "GothamPro-Bold";
+    font-size: 13px;
+    padding: 4px 8px;
+    background: #e61877;
+  }
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 31.35px;
+    margin-top: 20px;
+  }
+  &__btn {
+    margin-top: 12px;
+    display: block;
+    &:hover {
+      opacity: 0.75;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.shopfront-channel {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  min-height: 280px;
+  padding: 53px 40px;
+  background: url("../img/shopfront/channel/bg.png") no-repeat center;
+  background-size: cover;
+  color: white;
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.shopfront-ball {
+  background: url("../img/shopfront/ball/bg.png") no-repeat center;
+  height: 100%;
+  background-size: cover;
+  min-height: 280px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  &__title {
+    color: white;
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__text {
+    font-size: 11.75px;
+    color: white;
+    font-family: "GothamPro";
+  }
+}
+
+.shopfront-calculator {
+  height: 100%;
+  background: url("../img/shopfront/calcuator/bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 280px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  &__title {
+    color: white;
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__text {
+    font-size: 11.75px;
+    color: white;
+    font-family: "GothamPro";
+  }
+}
+
+.shopfront-teenagers {
+  background: url("../img/shopfront/teenagers/bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 280px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 100%;
+  &__title {
+    color: white;
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__text {
+    font-size: 11.75px;
+    color: white;
+    font-family: "GothamPro";
+  }
+}
+
+.shopfront-combo {
+  color: white;
+  padding: 40px;
+  background: url("../img/shopfront/combo/bg.png") no-repeat center;
+  background-size: cover;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  &__title {
+    font-family: "GothamPro-Bold";
+    font-size: 24px;
+    line-height: 30px;
+  }
+  &__advantages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__advantage {
+    margin-bottom: 10px;
+  }
+}
+
+.shopfront-socials {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  flex-basis: 73px;
+  &__item {
+    padding: 5px;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+}
+
+.shopfront-others {
+  list-style: none;
+  padding: 0;
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  &__item {
+    padding: 5px;
+    min-width: 280px;
+    flex-basis: 30%;
+    flex-grow: 1;
+    &--search {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+    }
+
+    &-body {
+      background: white;
+      padding: 33px;
+      height: 100%;
+    }
+    &-title {
+      font-family: "GothamPro-Bold";
+      font-size: 14px;
+      line-height: 24px;
+      color: #6a5b62;
+      text-transform: uppercase;
+      position: relative;
+      margin: 0;
+      &--vk {
+        padding-left: 35px;
+        &:before {
+          content: url("../img/shopfront/others-vk.png");
+          position: absolute;
+          top: 0px;
+          left: 0;
+        }
+      }
+      &--search {
+        padding-left: 25px;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f002";
+          position: absolute;
+          font-size: 18px;
+          top: 0px;
+          left: 0;
+        }
+      }
+    }
+
+    &-inp-search {
+      width: 100%;
+      background: #fbfafa;
+      border: 1px solid #f4ecee;
+      height: 60px;
+      padding: 0 25px;
+      margin: 15px 0 20px;
+      font-family: "GothamPro";
+      font-size: 12px;
+      line-height: 22px;
+      color: #bdb3b7;
+    }
+    &-btn-search {
+      font-family: "GothamPro-Bold";
+      text-transform: uppercase;
+      font-size: 10px;
+      color: #df509a;
+      border: 1px solid #df509a;
+      background: white;
+      cursor: pointer;
+      padding: 12px 30px;
+      border-radius: 30px;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+
+  &__discussions {
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+    &-item {
+      //background: url("../img/shopfront/others-decor-separator.png") no-repeat bottom;
+      border-bottom: 1px solid #f7f5f7;
+      margin: 0;
+      padding: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    &-text {
+      font-family: "GothamPro";
+      font-size: 13px;
+      line-height: 16px;
+      flex-basis: 85%;
+      margin: 0;
+    }
+    &-number {
+      align-self: start;
+      background: #ffdee5;
+      border-radius: 5px;
+      display: block;
+      width: 35px;
+      height: 27px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 27px;
+      color: #ec4a90;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        bottom: -7px;
+        right: 5px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid #ffdee5;
+        border-left: 8px solid transparent;
+      }
+    }
+  }
+}
+
+.shopfront-help {
+  position: fixed;
+  bottom: 200px;
+  right: 0px;
+  z-index: 1000;
+  &-box {
+    min-width: 185px;
+    background: #ec4a90;
+    color: white;
+    font-family: "GothamPro-Medium";
+    padding: 17px 18px 20px;
+    margin: 30px;
+    border-radius: 10px;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: -14px;
+      right: 55px;
+      width: 0;
+      height: 0;
+      border-top: 15px solid #ec4a90;
+      border-left: 13px solid transparent;
+    }
+    &:after {
+      content: url("../img/shopfront/help-man.png");
+      position: absolute;
+      bottom: -215px;
+      right: -30px;
+    }
+    &__btn {
+      background: #ec4a90;
+      font-family: "GothamPro-Bold";
+      color: white;
+      text-transform: uppercase;
+      font-size: 10px;
+      border: 2px solid white;
+      font-weight: 700;
+      padding: 5px 10px;
+      width: 100%;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .shopfront-manipulation__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 417px) {
+  .shopfront-manipulation{
+    min-height: 515px;
+  }
+  .shopfront-manipulation__title {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 25px;
+  }
+  .shopfront-manipulation__advantage{
+    margin-bottom: 30px;
+  }
+  .shopfront-item--half {
+    min-width: 250px;
+  }
+  .shopfront-socials {
+    flex-basis: 100%;
+  }
+  .shopfront-others{
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 375px) {
+  .shopfront-stage__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .shopfront-who-is__title{
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .shopfront-manipulation__title{
+    margin-top: 15px;
+  }
+  .shopfront-manipulation__advantages{
+    margin-top: 35px;
+  }
+  .shopfront-socials__item-image{
+    width: 62px;
+  }
+}

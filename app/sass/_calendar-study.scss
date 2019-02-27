@@ -1,0 +1,99 @@
+@import "vars";
+//TOOLS
+.calendar-study-btn {
+  border: none;
+  color: white;
+  font-family: "GothamPro-Medium";
+  font-size: 12px;
+  line-height: 21px;
+  padding: 11px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 5px;
+  &:hover {
+    opacity: 0.8;
+  }
+  &--print {
+    background: #9933cc;
+    &:before {
+      position: relative;
+      top: 3px;
+      margin-right: 14px;
+      content: url("../img/calendar-study/decor-btn-print.png");
+    }
+  }
+  &--save {
+    background: #ff6699;
+    &:before {
+      position: relative;
+      top: 3px;
+      margin-right: 14px;
+      content: url("../img/calendar-study/decor-btn-download.png");
+    }
+  }
+}
+
+//
+.calendar-study {
+  &__heading-header {
+    color: #333333;
+    font-family: "GothamPro-Medium";
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    background: url("../img/calendar-study/decor-heading-separator.png") no-repeat bottom;
+    background-size: 100%;
+  }
+  &__heading-text {
+    color: #666666;
+    font-family: "GothamPro";
+    font-size: 12px;
+    line-height: 22px;
+  }
+  &__heading-btns {
+    margin-bottom: 15px;
+  }
+}
+
+.calendar-day-study-on{
+  position: relative;
+  background:rgba(255,153,204, 0.15) !important;
+  &:after{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    content: url("../img/calendar-study/calendar-day-study-on.png");
+  }
+  &:before{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 5px solid #66cc33;
+  }
+}
+
+.calendar-day-study-off{
+  position: relative;
+  background:rgba(255,153,204, 0.05) !important;
+  &:after{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    content: url("../img/calendar-study/calendar-day-study-on-sec.png");
+  }
+  &:before{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+  }
+}

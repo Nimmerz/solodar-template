@@ -1,0 +1,692 @@
+@import 'vars';
+
+.header-book {
+	background: url("../img/book-landing/header-book.jpg") center no-repeat;
+}
+
+.navbar-brand__book, .navbar-brand__book-nav  {
+	display: flex;
+	justify-content: center;
+}
+
+.book__font-style {
+	font-family: "hAndy";
+	text-transform: uppercase;
+}
+
+.book__add-menu {
+	min-height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: $book-trash;
+	overflow-x: hidden;
+	&--shop {
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	&--navbar-link {
+		color: $white;
+		border-bottom: 1px dashed $white;
+		padding: 0;
+		margin: 5px 15px 0 0;
+		font-weight: 700;
+		&:hover {
+			opacity: 0.8;
+			text-decoration: none;
+			color: white;
+		}
+	}
+
+	&--trash-content {
+		color: $white;
+		border: 1px dashed $white;
+		border-radius: 25px;
+		padding: 8px 15px;
+		margin-bottom: 0;
+	}
+
+	&--number {
+		background: $statistic-right-green;
+		padding: 5px 8px;
+		border-radius: 50%;
+	}
+}
+
+.book__stories {
+	background: url("../img/book-landing/stories-back.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 1095px;
+	padding-top: 100px;
+	overflow-x: hidden;
+	&--blocks {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	&--image {
+		max-height: 650px;
+		margin-left: -145px;
+	}
+	&--second-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&--second-header {
+		text-align: center;
+		color: $book-header;
+		font-family: 'IntroHeadB-Base';
+		font-size: 63px;
+		font-weight: 400;
+		line-height: 60px;
+		position: relative;
+		&:before {
+			content: url("../img/book-landing/back-header.png");
+			position: absolute;
+			left: -145px;
+			top: -80px;
+		}
+	}
+	&--second-content {
+		color: $book-content;
+		font-family: 'IntroHeadB-Base';
+		font-size: 34px;
+		font-weight: 400;
+		text-transform: none;
+		line-height: 34px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&--second-content-sec {
+		color: $content-book;
+		font-family: "GothamPro";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 26px;
+		text-align: center;
+	}
+
+	&--price-block {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	&--price-input {
+		max-width: 160px;
+		min-height: 50px;
+		margin-right: 20px;
+		border: 1px solid #ececec;
+		button {
+			background: $white;
+			box-sizing: border-box;
+			outline: none;
+			border-radius: 0;
+			border: 1px solid #ececec;
+			cursor: pointer;
+		}
+	}
+
+	&--price-paragraph {
+		display: flex;
+		flex-direction: column;
+		color: $content-book;
+		font-family: "GothamPro";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 40.78px;
+		margin-right: 20px;
+	}
+
+	&--price-number {
+		color: #4285f4;
+		font-size: 31px;
+	}
+
+	&--price-text {
+		color: #4285f4;
+		font-family: "GothamPro";
+		font-size: 13px;
+	}
+
+	&--price-btn {
+		padding: 17px 10px !important;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	&--second-content-third {
+		color: $content-book;
+		font-family: "GothamPro";
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 39.14px;
+		text-transform: uppercase;
+		margin-top: 15px;
+		position: relative;
+		&:before {
+			content: url("../img/book-landing/left-date.png");
+			position: absolute;
+			left: -45px;
+			top: 3px;
+		}
+		&:after {
+			content: url("../img/book-landing/right-date.png");
+			position: absolute;
+			right: -45px;
+			top: 3px;
+		}
+	}
+}
+
+.book-need-read {
+	&__icons {
+		position: absolute;
+		top: -620px;
+		padding: 80px 80px 80px 120px;
+		width: 100%;
+		&--first-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		&--second-block {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin-top: 40px;
+		}
+		&--icon-one {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-six.svg");
+				position: absolute;
+				left: -60px;
+				top: -18px;
+			}
+		}
+		&--icon-two {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-one.svg");
+				position: absolute;
+				left: -60px;
+				top: -18px;
+			}
+		}
+		&--icon-three {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-three.svg");
+				position: absolute;
+				left: -60px;
+				top: -18px;
+			}
+		}
+		&--icon-four {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-two.svg");
+				position: absolute;
+				left: -60px;
+				top: -18px;
+			}
+		}
+		&--icon-five {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-four.svg");
+				position: absolute;
+				left: -60px;
+				top: -18px;
+			}
+		}
+		&--icon-six {
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/icon-five.svg");
+				position: absolute;
+				left: -60px;
+				top: -12px;
+			}
+		}
+		&--header {
+			color: #f14e8b;
+			font-family: 'IntroHeadB-Base';
+			font-size: 30px;
+			line-height: 20px;
+		}
+		&--paragraph {
+			max-width: 261px;
+			word-wrap: break-word;
+			color: $content-absolute;
+			font-family: "GothamPro";
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	background: url("../img/book-landing/rose-back.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 1315px;
+	width: 100%;
+	position: relative;
+	padding-top: 290px;
+	&:after {
+		content: url("../img/book-landing/girl-left.png");
+		position: absolute;
+		bottom: -100px;
+		z-index: 99;
+		right: 0;
+	}
+	&__header {
+		color: $white;
+		font-family: 'IntroHeadB-Base';
+		font-size: 44px;
+		font-weight: 400;
+		line-height: 60px;
+		text-align: center;
+	}
+	&__info {
+		display: flex;
+		flex-direction: row;
+
+		&--sec {
+			background: url("../img/book-landing/paper-back.png") center no-repeat;
+			background-size: 100% 100%;
+			margin-left: 30px;
+		}
+
+		&--sec-header {
+			color: $book-low-header;
+			font-family: "GothamPro";
+			font-size: 21px;
+			font-weight: 400;
+			line-height: 31px;
+			margin-top: 60px;
+			max-width: 450px;
+			word-wrap: break-word;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&--lists {
+			list-style: none;
+			margin-top: 40px;
+			li {
+				counter-increment: step-counter;
+				&:before {
+					content: counter(step-counter);
+					color: #eb678e;
+					font-family: 'IntroHeadB-Base';
+					font-size: 40px;
+					font-weight: 400;
+					line-height: 12px;
+					position: absolute;
+					left: 28px;
+				}
+			}
+		}
+
+		&--lists-content {
+			color: #66726b;
+			font-family: "GothamPro";
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 26px;
+		}
+
+		&--first-image {
+			display: flex;
+			flex-direction: row;
+		}
+
+		&--larisa-label {
+			margin-top:	15px;
+			position: relative;
+			background: url("../img/book-landing/larisa-back.png") center 20px no-repeat;
+			background-size: contain;
+			z-index: 2;
+		}
+
+		&--larisa-content {
+			color: $white;
+			font-family: "GothamPro";
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 26px;
+			word-wrap: break-word;
+		}
+		&--larisa-wave {
+			position: relative;
+			text-decoration: underline;
+		}
+
+		&--paragraph {
+			color: $white;
+			font-family: "GothamPro";
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 26px;
+			word-wrap: break-word;
+			margin-top: 40px;
+			position: relative;
+			&:before {
+				content: url("../img/book-landing/dotted-line.png");
+				position: absolute;
+				left: 0;
+				top: -40px;
+			}
+		}
+		&--font-size {
+			font-size: 15px;
+			margin-bottom: 40px;
+		}
+
+		&--link {
+			color: $white;
+			border-radius: 4px;
+			border: 2px solid rgba(255, 255, 255, 0.25);
+			padding: 15px 15px;
+			&:hover {
+				text-decoration: none;
+				color: $white;
+				opacity: 0.8;
+			}
+			&:focus {
+				text-decoration: none;
+				color: $white;
+				opacity: 0.8;
+			}
+			&:active {
+				text-decoration: none;
+				color: $white;
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+.book-sliders {
+	background: $white;
+	min-height: 1120px;
+	width: 100%;
+	&__carousel {
+		margin-top: 100px;
+		&--img {
+			max-height: 845px;
+		}
+		&--cloud {
+			position: absolute;
+			background: url("../img/book-landing/cloud.png") center no-repeat;
+			background-size: 100% 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: -4px;
+			right: 175px;
+			min-width: 348px;
+			min-height: 211px;
+		}
+		&--cloud-content {
+			color: #282a2a;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 18px;
+			font-family: 'IntroHeadB-Base';
+			text-align: center;
+			max-width: 148px;
+			margin-left: 35px;
+		}
+	}
+	&__header {
+		color: #282a2a;
+		font-family: 'IntroHeadB-Base';
+		font-size: 66px;
+		font-weight: 400;
+		line-height: 47.15px;
+		margin-top: 40px;
+	}
+	&__content {
+		color: $book-header;
+		font-family: 'IntroHeadB-Base';
+		font-size: 44px;
+		font-weight: 400;
+		opacity: 0.9;
+		line-height: 35.49px;
+	}
+
+	&__carousel {
+		&--left {
+			left: -21px;
+			width: 40px;
+			height: 40px;
+			top: 400px;
+		}
+		&--right {
+			right: -21px;
+			width: 40px;
+			height: 40px;
+			top: 400px;
+		}
+		&--singles {
+			max-width: 10px !important;
+			width: 10px !important;
+			height: 10px !important;
+			background-color: #bebebe!important;
+			border-radius: 50%;
+		}
+
+		&--lists {
+			bottom: 15px;
+			.active {
+				background-color: #ed739c!important;
+			}
+		}
+	}
+
+	&__carousel-content {
+		&--paragraph {
+			color: #444e4f;
+			font-family: "GothamPro";
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 20px;
+			border-radius: 37px;
+			border: 1px dotted #59c4d1;
+			background-color: transparent;
+			max-width: 240px;
+			text-align: center;
+			padding: 15px;
+			margin-right: 80px;
+		}
+		&--item {
+			justify-content: flex-end;
+		}
+
+		&--list {
+			max-width: 10px !important;
+			width: 10px !important;
+			height: 10px !important;
+			background-color: #e1e7e8 !important;
+			border-radius: 50%;
+		}
+		&--lists {
+			bottom: -45px;
+			left: 720px;
+			.active {
+				background: #79cfda !important;
+			}
+		}
+	}
+
+}
+
+.how-say {
+	background: url("../img/book-landing/steps-layer.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	width: 100%;
+	position: relative;
+	&__content {
+		&--first {
+			padding-top: 50px;
+			display: flex;
+			align-items: center;
+		}
+		&--second {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-top: 95px;
+			padding-left: 130px;
+			padding-bottom: 50px;
+			position: relative;
+			&:before {
+				position: absolute;
+				content: url("../img/book-landing/dotted-rose.png");
+				top: 105px;
+				left: 265px;
+			}
+		}
+		&--header {
+			color: $book-header;
+			font-family: 'IntroHeadB-Base';
+			font-size: 45px;
+			font-weight: 400;
+			line-height: 47.15px;
+		}
+
+
+		&--number-one {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			max-width: 95px;
+			margin-top: 10px;
+		}
+
+		&--number {
+			color: $book-number;
+			font-family: "hAndy";
+			font-size: 35px;
+			font-weight: 400;
+			line-height: 124.02px;
+			background-color: $back-number;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 0;
+		}
+
+		&--content {
+			color: #817754;
+			font-family: "GothamPro";
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;
+			margin-top: 5px;
+		}
+
+		&--number-two {
+			text-align: center;
+			max-width: 95px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		}
+
+		&--number-three {
+			text-align: center;
+			max-width: 95px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 10px;
+		}
+	}
+}
+
+.video-book {
+	background: $white;
+	min-height: 500px;
+	width: 100%;
+	font-family: 'hAndy';
+	text-align: center;
+	padding-bottom: 0;
+	padding-top: 100px;
+	&--video {
+		border: 1px solid rgba(89, 196, 209, 0.31);
+		background-color: #59c4d1;
+		width: 100%;
+		min-height: 589px;
+		margin: 45px 0;
+	}
+	&--header {
+		margin-top: 80px;
+		color: $book-header;
+		font-size: 60px;
+		font-weight: 400;
+		font-family: 'IntroHeadB-Base';
+		line-height: 47.15px;
+	}
+	&--content {
+		color: $book-header;
+		font-size: 60px;
+		font-family: 'IntroHeadB-Base';
+		font-weight: 400;
+		line-height: 56px;
+		max-width: 520px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 25px;
+	}
+	&--link-btn {
+		border: 1px solid #4285f4;
+		outline: none;
+		background: #4285f4;
+		background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+		border-radius: 4px;
+		padding: 20px 25px;
+		color: $white;
+		font-family: "GothamPro";
+		font-size: 15px;
+		font-weight: 500;
+		text-transform: none;
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+}
+
+.footer-book {
+	width: 100%;
+	min-height: 260px;
+	background: url('../img/book-landing/footer-back.png') center no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	&--img {
+		position: absolute;
+		bottom: 60px;
+		z-index: 2;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

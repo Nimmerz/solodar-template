@@ -1,0 +1,183 @@
+$s4t_clrPurpure: #cc3366;
+$s4t_clrPurpure2: #ff6699;
+$s4t_clrBgArchiveItem: #6600cc;
+$s4t_clrGrey: #333333;
+
+
+
+$s4t_clrGrey: #999999;
+
+.meets-archive {
+  &__header {
+    font-family: "GothamPro-Medium";
+    font-size: 18px;
+    line-height: 26px;
+    margin: 30px 0 0 30px;
+  }
+  &-separator {
+    margin: 20px 0;
+    padding: 0px 30px;
+    display: flex;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    background: $white;
+    &__liked {
+      display: flex;
+      &-p {
+        margin: 0px;
+        position: relative;
+        font-family: "Wes";
+        font-size: 18px;
+        line-height: 26px;
+        color: $s4t_clrPurpure;
+        padding-left: 35px;
+        &:before {
+          content: url("../img/meets-archive/heart.png");
+          position: absolute;
+          left: 0px;
+        }
+      }
+    }
+    &__search {
+      min-height: 100%;
+      display: flex;
+      align-content: center;
+      &-p {
+        display: inline-block;
+        margin: 0;
+        font-family: "GothamPro";
+        font-size: 12px;
+        line-height: 26px;
+        color: $s4t_clrGrey;
+        padding: 0px 40px 0 50px;
+        &:before {
+          font-family: "FontAwesome";
+          content: "\f002";
+          color: $s4t_clrPurpure2;
+          margin-right: 19px;
+        }
+      }
+    }
+    &__events{
+      display: flex;
+      align-content: center;
+      &-p{
+        font-family: "Wes";
+        font-size: 14px;
+        line-height: 26px;
+        color: $s4t_clrGrey;
+        margin: 0;
+        &:before{
+         content: url("../img/meets-archive/leaf.png");
+          margin-right: 10px;
+        }
+      }
+    }
+    &__months{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+      &-month{
+        font-family: "Wes";
+        font-size: 14px;
+        line-height: 26px;
+        text-transform: uppercase;
+        list-style-type: none;
+        margin-right: 18px;
+        padding: 0 16px;
+        &:hover{
+          background: url("../img/meets-archive/month-hover-bg.png") center no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
+.archive-item {
+  cursor: pointer;
+  background: url("../img/meets-archive/content-back.png") center no-repeat;
+  background-size: cover;
+  margin: 0 0 15px;
+  color: $white;
+  display: flex;
+  padding: 22px 30px;
+  &__date-wrap{
+    font-family: "Wes";
+  }
+  &__content-header{
+    font-family: "wesregular";
+    font-size: 24px;
+    line-height: 25px;
+  }
+  &__content-descript{
+    font-family: "GothamPro";
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0 0 10px 0;
+  }
+  &__content-more{
+    font-family: "GothamPro";
+    font-size: 12px;
+    line-height: 20px;
+    color: $s4t_clrPurpure2;
+    border-bottom: 2px dashed $s4t_clrPurpure2;
+  }
+  &__content-organizer{
+    font-family: "GothamPro-Medium";
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0;
+    &:before{
+      font-family: "FontAwesome";
+      content: "\f095";
+      color:$s4t_clrPurpure;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+  }
+  &__date-wrap{
+    margin: 10px 30px 10px;
+  }
+  &__dateWrap {
+    max-width: 60px;
+    position: relative;
+    &:before {
+      content: url("../img/meets-archive/bg-flower-left.png");
+      position: absolute;
+      bottom: 0px;
+      left: -25px;
+    }
+    &:after {
+      content: url("../img/meets-archive/bg-flower-right.png");
+      position: absolute;
+      bottom: 0px;
+      right: -22px;
+    }
+  }
+  &__date{
+    font-size: 70px;
+    line-height: 50px;
+    margin: 0;
+  }
+  &__month{
+    font-size: 17px;
+    line-height: 21px;
+    margin: 0;
+  }
+}
+.archive-item-big {
+  background: url("../img/meets-archive/content-back-big.png") center no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 770px) {
+  .archive-item{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+}

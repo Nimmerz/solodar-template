@@ -1,0 +1,86 @@
+$join-clrHeadH2:#333333;
+
+.join{
+
+  &__separator-dn{
+    background: url("../img/join/separator.png") no-repeat bottom;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__option {
+      height: 30px;
+      color: #000;
+    }
+  }
+
+  &__head-h2{
+    font-family: "GothamPro-Medium";
+    font-size: 18px;
+    line-height: 26px;
+    color: $join-clrHeadH2;
+    padding: 11px 0 11px 25px;
+
+  }
+  &__head-read-faq{
+    font-family: "GothamPro";
+    font-size: 14px;
+    line-height: 22px;
+    color: $join-clrHeadH2;
+    padding: 5px 0 0 25px;
+    margin: 0;
+  }
+
+  &__membership{
+    margin-top: 12px;
+  }
+
+  &__guest{
+    background: url("../img/join/bg-guest.png")no-repeat center ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 113px;
+    padding: 30px;
+    margin-top: 20px;
+
+    &-text{
+      font-family: "Wes";
+      font-size: 25px;
+      line-height: 29.48px;
+      color: white;
+      margin: 10px 18px;
+    }
+
+    &-btn{
+      border: none;
+      border-radius: 4px;
+      background: #f96a98;
+      cursor: pointer;
+      box-shadow: 0 7px 9px rgba(243,75,164,.35), 0 7px 9px rgba(153,46,103,.25);
+      padding: 10px 40px;
+      color: white;
+      font-family: "GothamPro-Medium";
+      font-size: 13px;
+      margin: 10px 18px;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__club-city{
+    &--wrap{
+      background: white;
+      margin-top: 20px;
+      box-shadow: 0 2px 3px rgba(102,0,24,.35);
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  .join__memberTypes-media{
+    justify-content: space-around;
+  }
+}

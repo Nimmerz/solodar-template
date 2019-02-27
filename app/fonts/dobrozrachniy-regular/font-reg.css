@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Dobrozrachniy-Regular';
+  src: url('Dobrozrachniy-Regular.eot');
+  src: url('Dobrozrachniy-Regular.woff2') format('woff2'),
+       url('Dobrozrachniy-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,160 @@
+$travel-discount-clrPink:#ff3366;
+$travel-discount-clrMainText:#333333;
+$travel-discount-clrViolet:#9933cc;
+
+
+
+.travel-discount{
+  &__btn--violet{
+    background: $travel-discount-clrViolet;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 22px;
+    font-family: "GothamPro-Medium";
+    font-size: 12px;
+    line-height: 23.6px;
+    box-shadow: 0px 5px 5px rgba(114,51,153,0.3);
+    cursor: pointer;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+
+  &__conditions{
+    font-family: "GothamPro";
+    font-size: 13px;
+    line-height: 26px;
+    color: $travel-discount-clrMainText;
+    background: url("../img/travel-discount/border-separator.png") no-repeat top;
+    background-size: 100%;
+    margin-top: 12px;
+    padding: 18px 25px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 15px;
+
+    &--bg-small{
+      background: url("../img/travel-discount/bg-item-small.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    &--bg-large{
+      background: url("../img/travel-discount/bg-item-large.png") no-repeat center;
+      background-size: 100% 100%;
+    }
+
+    &-img-box{
+      align-self: flex-start;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-grow: 1;
+      margin-bottom: 20px;
+      position: relative;
+      img{
+        border-radius: 3px;
+      }
+    }
+
+    &-discount{
+      position: absolute;
+      padding: 6px;
+      color: white;
+      font-family: "Wes";
+      font-size: 21px;
+      line-height: 21px;
+      top: 50%;
+      margin-top: -16px;
+      background: url("../img/travel-discount/bg-discount.png") center no-repeat;
+      background-size: cover;
+    }
+
+    &-content-box{
+      flex-basis: 476px;
+      flex-grow: 1;
+      padding: 0 15px;
+    }
+
+    &-head{
+      font-family: "Wes";
+      font-size: 24px;
+      line-height: 25px;
+      color: $travel-discount-clrPink;
+      margin: 5px 0 8px;
+    }
+
+    &-text{
+      font-family: "GothamPro";
+      font-size: 12px;
+      line-height: 25px;
+      color: $travel-discount-clrMainText;
+    }
+
+    &-more{
+      font-family: "GothamPro";
+      font-size: 12px;
+      line-height: 25px;
+      color: $travel-discount-clrPink;
+      border-bottom: 1px dashed $travel-discount-clrPink;
+      cursor: pointer;
+      &:hover{
+        border-bottom:none;
+      }
+    }
+
+    &-links{
+      &-phone{
+        color: $travel-discount-clrMainText;
+        font-family: "GothamPro-Medium";
+        font-size: 14px;
+        line-height: 21px;
+        &:before{
+          font-family: "FontAwesome";
+          content: "\f095";
+          color: $travel-discount-clrPink;
+          margin-right: 6px;
+        }
+        &:hover{
+          text-decoration: none;
+          opacity: 0.7;
+        }
+      }
+
+      &-org{
+        color: $travel-discount-clrMainText;
+        font-family: "GothamPro-Medium";
+        font-size: 12px;
+        line-height: 21px;
+        &:before{
+          content: " | ";
+        }
+        &:after{
+          content: " | ";
+        }
+        &:hover{
+          text-decoration: none;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &-btn-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      padding: 0 0 20px;
+      //align-self: flex-start;
+      //padding-top: 50px;
+    }
+
+
+  }
+}
